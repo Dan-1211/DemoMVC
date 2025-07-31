@@ -1,0 +1,3143 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Tài Khoản - Cửa Hàng Mỹ Phẩm</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="quanlitaikhoan.css">
+</head>
+<body>
+    <!-- Animated Background Effects -->
+    <div class="animated-background">
+        <!-- Aurora Effect -->
+        <div class="aurora"></div>
+        
+        <!-- Organic Nature Patterns -->
+        <div class="organic-pattern"></div>
+        <div class="organic-pattern"></div>
+        <div class="organic-pattern"></div>
+        
+        <!-- Floating Leaves -->
+        <div class="leaf maple" style="left: 5%; animation-delay: 0s;">🍁</div>
+        <div class="leaf oak" style="left: 15%; animation-delay: -3s;">🍃</div>
+        <div class="leaf birch" style="left: 25%; animation-delay: -6s;">🌿</div>
+        <div class="leaf maple" style="left: 35%; animation-delay: -9s;">🍂</div>
+        <div class="leaf small" style="left: 45%; animation-delay: -12s;">🌱</div>
+        <div class="leaf oak" style="left: 55%; animation-delay: -2s;">🍃</div>
+        <div class="leaf birch" style="left: 65%; animation-delay: -5s;">🌿</div>
+        <div class="leaf maple" style="left: 75%; animation-delay: -8s;">🍁</div>
+        <div class="leaf small" style="left: 85%; animation-delay: -11s;">🌱</div>
+        <div class="leaf oak" style="left: 95%; animation-delay: -14s;">🍃</div>
+        
+        <!-- Floating Flower Petals -->
+        <div class="flower-petal sakura" style="left: 8%; animation-delay: -1s;">🌸</div>
+        <div class="flower-petal rose" style="left: 18%; animation-delay: -4s;">🌹</div>
+        <div class="flower-petal daisy" style="left: 28%; animation-delay: -7s;">🌼</div>
+        <div class="flower-petal lavender" style="left: 38%; animation-delay: -10s;">💜</div>
+        <div class="flower-petal sakura" style="left: 48%; animation-delay: -13s;">🌸</div>
+        <div class="flower-petal rose" style="left: 58%; animation-delay: -2.5s;">🌺</div>
+        <div class="flower-petal daisy" style="left: 68%; animation-delay: -5.5s;">🌼</div>
+        <div class="flower-petal lavender" style="left: 78%; animation-delay: -8.5s;">🌻</div>
+        <div class="flower-petal sakura" style="left: 88%; animation-delay: -11.5s;">🌸</div>
+        
+        <!-- Nature Elements -->
+        <div class="nature-element branch" style="left: 12%; animation-delay: -3s;">🌳</div>
+        <div class="nature-element grass" style="left: 32%; animation-delay: -8s;">🌾</div>
+        <div class="nature-element seed" style="left: 52%; animation-delay: -13s;">🌰</div>
+        <div class="nature-element branch" style="left: 72%; animation-delay: -5s;">🌲</div>
+        <div class="nature-element grass" style="left: 92%; animation-delay: -10s;">🌾</div>
+        
+        <!-- Floating Bubbles -->
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        
+        <!-- Ripple Effects -->
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        
+        <!-- Floating Nature & Cosmetic Icons -->
+        <div class="floating-icons"><i class="bi bi-droplet-fill"></i></div>
+        <div class="floating-icons"><i class="bi bi-flower1"></i></div>
+        <div class="floating-icons"><i class="bi bi-tree"></i></div>
+        <div class="floating-icons"><i class="bi bi-sun"></i></div>
+        <div class="floating-icons"><i class="bi bi-cloud"></i></div>
+        <div class="floating-icons"><i class="bi bi-droplet"></i></div>
+        <div class="floating-icons"><i class="bi bi-flower2"></i></div>
+        <div class="floating-icons"><i class="bi bi-brightness-high"></i></div>
+        <div class="floating-icons"><i class="bi bi-egg"></i></div>
+        <div class="floating-icons"><i class="bi bi-flower3"></i></div>
+        <div class="floating-icons"><i class="bi bi-water"></i></div>
+        <div class="floating-icons"><i class="bi bi-tree-fill"></i></div>
+        <div class="floating-icons">💄</div>
+        <div class="floating-icons">💅</div>
+        <div class="floating-icons">✨</div>
+        <div class="floating-icons">🌸</div>
+        <div class="floating-icons">🌺</div>
+        <div class="floating-icons">🦋</div>
+        
+        <!-- Geometric Shapes -->
+        <div class="geo-shape circle" style="top: 15%; left: 5%; animation-delay: 0s;"></div>
+        <div class="geo-shape triangle" style="top: 30%; left: 85%; animation-delay: -1s;"></div>
+        <div class="geo-shape square" style="top: 50%; left: 10%; animation-delay: -2s;"></div>
+        <div class="geo-shape diamond" style="top: 70%; left: 75%; animation-delay: -3s;"></div>
+        <div class="geo-shape circle" style="top: 80%; left: 30%; animation-delay: -4s;"></div>
+        <div class="geo-shape triangle" style="top: 25%; left: 60%; animation-delay: -5s;"></div>
+        <div class="geo-shape square" style="top: 65%; left: 90%; animation-delay: -6s;"></div>
+        <div class="geo-shape diamond" style="top: 45%; left: 40%; animation-delay: -7s;"></div>
+        
+        <!-- Sparkles -->
+        <div class="sparkle" style="top: 20%; left: 25%; animation-delay: 0s;"></div>
+        <div class="sparkle" style="top: 40%; left: 70%; animation-delay: -0.5s;"></div>
+        <div class="sparkle" style="top: 60%; left: 15%; animation-delay: -1s;"></div>
+        <div class="sparkle" style="top: 75%; left: 80%; animation-delay: -1.5s;"></div>
+        <div class="sparkle" style="top: 35%; left: 50%; animation-delay: -2s;"></div>
+        <div class="sparkle" style="top: 85%; left: 60%; animation-delay: -2.5s;"></div>
+        <div class="sparkle" style="top: 10%; left: 90%; animation-delay: -3s;"></div>
+        <div class="sparkle" style="top: 55%; left: 35%; animation-delay: -3.5s;"></div>
+        <div class="sparkle" style="top: 90%; left: 20%; animation-delay: -4s;"></div>
+        <div class="sparkle" style="top: 25%; left: 85%; animation-delay: -4.5s;"></div>
+        
+        <!-- Floating Particles -->
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: -1s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: -2s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: -3s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: -4s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: -5s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: -6s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: -7s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: -8s;"></div>
+        
+        <!-- Wave Animation -->
+        <div class="wave-container">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button class="btn btn-primary btn-theme-toggle" id="themeToggle" title="Chuyển đổi chế độ sáng/tối" 
+            style="position: fixed !important; bottom: 20px !important; right: 20px !important; z-index: 99999 !important; border-radius: 50% !important; width: 60px !important; height: 60px !important; padding: 0 !important; box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important; margin: 0 !important; transform: none !important; transition: all 0.3s ease !important; display: flex !important; align-items: center !important; justify-content: center !important;">
+        <i class="bi bi-sun-fill text-white" id="themeIcon" style="font-size: 1.5rem;"></i>
+    </button>
+
+    <!-- Avatar Crop Modal -->
+    <div class="modal fade" id="cropModal" tabindex="-1" aria-labelledby="cropModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cropModalLabel">
+                        <i class="bi bi-crop me-2"></i>Cắt ảnh đại diện
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="text-muted mb-3">Kéo để di chuyển và thu phóng ảnh. Vùng được chọn sẽ là ảnh đại diện của bạn.</p>
+                    <div class="crop-container" style="max-width: 350px; margin: 0 auto;">
+                        <canvas id="cropCanvas" width="300" height="300" 
+                                style="border: 2px solid var(--nature-green-soft); border-radius: 15px; cursor: move; max-width: 100%; transition: all 0.2s ease;"></canvas>
+                    </div>
+                    <div class="mt-3">
+                        <label for="zoomSlider" class="form-label">
+                            <i class="bi bi-zoom-in me-1"></i>Thu phóng
+                        </label>
+                        <input type="range" class="form-range" id="zoomSlider" min="0.5" max="3" step="0.05" value="1" 
+                               style="accent-color: var(--nature-green-accent);">
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-outline-secondary btn-sm" id="resetCrop">
+                            <i class="bi bi-arrow-counterclockwise me-1"></i>Đặt lại
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle me-1"></i>Hủy
+                    </button>
+                    <button type="button" class="btn btn-primary" id="applyCrop">
+                        <i class="bi bi-check-circle me-1"></i>Áp dụng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Address Modal -->
+    <div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addressModalLabel">
+                        <i class="bi bi-geo-alt me-2"></i>Thêm Địa Chỉ Mới
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addressForm">
+                        <input type="hidden" id="addressId">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="recipientName" class="form-label">
+                                    <i class="bi bi-person me-1"></i>Họ và tên người nhận *
+                                </label>
+                                <input type="text" class="form-control" id="recipientName" name="recipientName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">
+                                    <i class="bi bi-telephone me-1"></i>Số điện thoại *
+                                </label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required 
+                                       placeholder="Nhập 10 số điện thoại (VD: 0987654321)"
+                                       pattern="[0-9]{10,11}"
+                                       maxlength="11"
+                                       title="Số điện thoại phải có 10-11 chữ số">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="province" class="form-label">
+                                    <i class="bi bi-building me-1"></i>Tỉnh/Thành phố *
+                                </label>
+                                <div class="autocomplete-container">
+                                    <input type="text" class="form-control province-input" id="province" name="province" required 
+                                           placeholder="Nhập tên tỉnh/thành phố..." autocomplete="off">
+                                    <div class="autocomplete-dropdown" id="provinceDropdown"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="district" class="form-label">
+                                    <i class="bi bi-signpost me-1"></i>Quận/Huyện *
+                                </label>
+                                <div class="autocomplete-container">
+                                    <input type="text" class="form-control district-input" id="district" name="district" required 
+                                           placeholder="Nhập tên quận/huyện..." autocomplete="off" disabled>
+                                    <div class="autocomplete-dropdown" id="districtDropdown"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="ward" class="form-label">
+                                    <i class="bi bi-geo me-1"></i>Phường/Xã *
+                                </label>
+                                <div class="autocomplete-container">
+                                    <input type="text" class="form-control ward-input" id="ward" name="ward" required 
+                                           placeholder="Nhập tên phường/xã..." autocomplete="off" disabled>
+                                    <div class="autocomplete-dropdown" id="wardDropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="detailAddress" class="form-label">
+                                <i class="bi bi-house me-1"></i>Địa chỉ chi tiết *
+                            </label>
+                            <textarea class="form-control" id="detailAddress" name="detailAddress" rows="3" required 
+                                      placeholder="Nhập địa chỉ chi tiết (ít nhất 5 ký tự). Ví dụ: 123 Lê Lợi, Quận 1"></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="addressType" class="form-label">
+                                <i class="bi bi-tag me-1"></i>Loại địa chỉ
+                            </label>
+                            <select class="form-select" id="addressType" name="addressType">
+                                <option value="home">Nhà riêng</option>
+                                <option value="office">Văn phòng</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="isDefault" name="isDefault">
+                            <label class="form-check-label" for="isDefault">
+                                <i class="bi bi-star me-1"></i>Đặt làm địa chỉ mặc định
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle me-1"></i>Hủy
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="console.log('Button clicked!'); saveAddress();">
+                        <i class="bi bi-check-circle me-1"></i>Lưu Địa Chỉ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Section -->
+    <div id="loginSection" class="form-section active">
+        <div class="login-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="text-center mb-4">
+                                    <h2 class="card-title">Đăng Nhập</h2>
+                                    <p class="text-muted">Vui lòng đăng nhập vào tài khoản của bạn</p>
+                                </div>
+                                <form id="loginForm">
+                                    <div class="mb-3">
+                                        <label for="loginUsername" class="form-label">Email hoặc Tên đăng nhập</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                            <input type="text" class="form-control" id="loginUsername" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="loginPassword" class="form-label">Mật khẩu</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                            <input type="password" class="form-control" id="loginPassword" required>
+                                            <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                                                <i class="bi bi-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary" onclick="handleLogin(event)">Đăng Nhập</button>
+                                    </div>
+                                </form>
+                                <div class="text-center mt-3">
+                                    <a href="#" class="text-decoration-none" onclick="showSection('forgotPasswordSection')">Quên mật khẩu?</a>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <span class="text-muted">Chưa có tài khoản? </span>
+                                    <a href="#" class="text-decoration-none" onclick="showSection('registerSection')">Đăng ký ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Section -->
+    <div id="registerSection" class="form-section">
+        <div class="login-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card">
+                            <div class="card-body p-3">
+                                <div class="text-center mb-2">
+                                    <h5 class="card-title mb-1">Đăng Ký Tài Khoản</h5>
+                                    <small class="text-muted">Tạo tài khoản mới</small>
+                                </div>
+                                <form id="registerForm">
+                                    <div class="mb-2">
+                                        <label for="registerName" class="form-label">Họ và tên</label>
+                                        <input type="text" class="form-control" id="registerName" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="registerEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="registerEmail" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="registerUsername" class="form-label">Tên đăng nhập</label>
+                                        <input type="text" class="form-control" id="registerUsername" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="registerPassword" class="form-label">Mật khẩu</label>
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" id="registerPassword" required>
+                                            <button class="btn btn-outline-secondary" type="button" id="toggleRegisterPassword">
+                                                <i class="bi bi-eye"></i>
+                                            </button>
+                                        </div>
+                                        <div class="strength-meter mt-1">
+                                            <div class="strength-bar" id="strengthBar"></div>
+                                        </div>
+                                        <small class="text-muted" id="strengthText">Nhập mật khẩu để kiểm tra độ mạnh</small>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                                        <input type="password" class="form-control" id="confirmPassword" required>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                                        <label class="form-check-label" for="agreeTerms">
+                                            Tôi đồng ý với <a href="#" class="text-decoration-none">điều khoản sử dụng</a>
+                                        </label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Đăng Ký</button>
+                                    </div>
+                                </form>
+                                <div class="text-center mt-2">
+                                    <span class="text-muted">Đã có tài khoản? </span>
+                                    <a href="#" class="text-decoration-none" onclick="showSection('loginSection')">Đăng nhập</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Section -->
+    <div id="forgotPasswordSection" class="form-section">
+        <div class="login-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="text-center mb-4">
+                                    <h2 class="card-title">Quên Mật Khẩu</h2>
+                                    <p class="text-muted">Nhập email để đặt lại mật khẩu</p>
+                                </div>
+                                <form id="forgotPasswordForm">
+                                    <div class="mb-3">
+                                        <label for="forgotEmail" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                            <input type="email" class="form-control" id="forgotEmail" required>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Gửi Email Đặt Lại</button>
+                                    </div>
+                                </form>
+                                <div class="text-center mt-3">
+                                    <a href="#" class="text-decoration-none" onclick="showSection('loginSection')">Quay lại đăng nhập</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Password Section -->
+    <div id="resetPasswordSection" class="form-section">
+        <div class="login-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="text-center mb-4">
+                                    <h2 class="card-title">Đặt Lại Mật Khẩu</h2>
+                                    <p class="text-muted">Nhập mật khẩu mới</p>
+                                </div>
+                                <form id="resetPasswordForm">
+                                    <div class="mb-3">
+                                        <label for="newPassword" class="form-label">Mật khẩu mới</label>
+                                        <input type="password" class="form-control" id="newPassword" required>
+                                        <div class="strength-meter">
+                                            <div class="strength-bar" id="resetStrengthBar"></div>
+                                        </div>
+                                        <small class="text-muted" id="resetStrengthText">Nhập mật khẩu để kiểm tra độ mạnh</small>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="confirmNewPassword" class="form-label">Xác nhận mật khẩu mới</label>
+                                        <input type="password" class="form-control" id="confirmNewPassword" required>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Đặt Lại Mật Khẩu</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboardSection" class="form-section">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar p-0">
+                <div class="p-3">
+                    <h5 class="mb-3">Quản Lý Tài Khoản - Mỹ Phẩm</h5>
+                    <div class="nav nav-pills flex-column">
+                        <a class="nav-link active" href="#" onclick="showDashboardTab('profileTab')">
+                            <i class="bi bi-person-circle me-2"></i>Thông Tin
+                        </a>
+                        <a class="nav-link" href="#" onclick="showDashboardTab('addressTab')">
+                            <i class="bi bi-geo-alt me-2"></i>Địa Chỉ
+                        </a>
+                        <a class="nav-link" href="#" onclick="showDashboardTab('ordersTab')">
+                            <i class="bi bi-bag-check me-2"></i>Đơn Hàng
+                        </a>
+                        <hr class="my-3">
+                        <a class="nav-link text-danger" href="#" onclick="logout()">
+                            <i class="bi bi-box-arrow-right me-2"></i>Đăng Xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 col-lg-10">
+                <div class="p-4">
+                    <!-- Profile, Settings & Change Password Tab -->
+                    <div id="profileTab" class="dashboard-tab">
+                        <div class="row">
+                            <!-- Profile Avatar and Info - Made Larger -->
+                            <div class="col-md-5">
+                                <div class="card h-100">
+                                    <div class="card-body text-center d-flex flex-column justify-content-center">
+                                        <div class="profile-avatar mx-auto mb-4" id="profileAvatar">
+                                            <i class="bi bi-person" style="font-size: 4rem;"></i>
+                                            <input type="file" id="avatarInput" accept="image/*" style="display: none;" onchange="handleAvatarChange(event)">
+                                        </div>
+                                        <h4 id="profileName" class="mb-2">Người dùng</h4>
+                                        <p class="text-muted mb-3" id="profileEmail">user@example.com</p>
+                                        <span class="badge bg-success fs-6 px-3 py-2 mb-4">Email đã xác thực</span>
+                                        
+                                        <!-- Test Avatar Button -->
+                                        <div class="mb-3">
+                                            <button class="btn btn-outline-primary btn-sm" onclick="testAvatarFunction()" title="Thay đổi ảnh đại diện">
+                                                <i class="bi bi-camera"></i> Thay đổi ảnh đại diện
+                                            </button>
+                                        </div>
+                                        
+                                        <!-- Quick Stats -->
+                                        <div class="mt-auto">
+                                            <div class="row text-center">
+                                                <div class="col-4">
+                                                    <div class="border-end">
+                                                        <h5 class="text-primary mb-1" id="userTotalOrders">5</h5>
+                                                        <small class="text-muted">Đơn hàng</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="border-end">
+                                                        <h5 class="text-success mb-1" id="userTotalSpent">₫11.4M</h5>
+                                                        <small class="text-muted">Đã mua</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h5 class="text-info mb-1" id="memberSince">01/2025</h5>
+                                                    <small class="text-muted">Thành viên</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Profile Settings & Forms - Made Larger -->
+                            <div class="col-md-7">
+                                <!-- Navigation Tabs -->
+                                <ul class="nav nav-tabs nav-justified" id="profileTabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="profile-info-tab" data-bs-toggle="tab" data-bs-target="#profile-info" type="button" role="tab">
+                                            <i class="bi bi-person me-1"></i>Thông tin cá nhân
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="change-password-tab" data-bs-toggle="tab" data-bs-target="#change-password" type="button" role="tab">
+                                            <i class="bi bi-key me-1"></i>Đổi mật khẩu
+                                        </button>
+                                    </li>
+                                </ul>
+                                
+                                <div class="tab-content mt-3" id="profileTabsContent">
+                                    <!-- Profile Information -->
+                                    <div class="tab-pane fade show active" id="profile-info" role="tabpanel">
+                                        <div class="card">
+                                            <div class="card-header text-center py-1">
+                                                <h6 class="card-title mb-0">
+                                                    <i class="bi bi-person-lines-fill me-1"></i>Chỉnh sửa thông tin cá nhân
+                                                </h6>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <form id="profileForm" autocomplete="off" novalidate>
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="editName" class="form-label">
+                                                                <i class="bi bi-person me-1"></i>Họ và tên *
+                                                            </label>
+                                                            <input type="text" class="form-control" id="editName" required onkeydown="preventEnterSubmit(event)">
+                                                        </div>
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="editEmail" class="form-label">
+                                                                <i class="bi bi-envelope me-1"></i>Email *
+                                                            </label>
+                                                            <input type="email" class="form-control" id="editEmail" required onkeydown="preventEnterSubmit(event)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="editPhone" class="form-label">
+                                                                <i class="bi bi-telephone me-1"></i>Số điện thoại
+                                                            </label>
+                                                            <input type="tel" class="form-control" id="editPhone" onkeydown="preventEnterSubmit(event)">
+                                                        </div>
+                                                        <div class="col-md-6 mb-2">
+                                                            <label for="editBirthday" class="form-label">
+                                                                <i class="bi bi-calendar me-1"></i>Ngày sinh
+                                                            </label>
+                                                            <input type="date" class="form-control" id="editBirthday" onkeydown="preventEnterSubmit(event)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="form-label">
+                                                            <i class="bi bi-gender-ambiguous me-1"></i>Giới tính
+                                                        </label>
+                                                        <div class="d-flex gap-4 mt-2">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male">
+                                                                <label class="form-check-label" for="genderMale">
+                                                                    <i class="bi bi-person me-1"></i>Nam
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
+                                                                <label class="form-check-label" for="genderFemale">
+                                                                    <i class="bi bi-person-dress me-1"></i>Nữ
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Email Notification Settings -->
+                                                    <div class="mb-2">
+                                                        <label class="form-label">
+                                                            <i class="bi bi-bell me-1"></i>Thông báo
+                                                        </label>
+                                                        <div class="border rounded p-2 bg-light mt-2">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="emailNotifications" checked>
+                                                                <label class="form-check-label" for="emailNotifications">
+                                                                    <i class="bi bi-envelope me-1"></i>Email thông báo đơn hàng
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-2">
+                                                        <button type="submit" class="btn btn-primary">
+                                                            <i class="bi bi-check-lg me-1"></i>Lưu thay đổi
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-secondary" onclick="resetProfileForm()">
+                                                            <i class="bi bi-arrow-counterclockwise me-1"></i>Đặt lại
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Change Password -->
+                                    <div class="tab-pane fade" id="change-password" role="tabpanel">
+                                        <div class="card">
+                                            <div class="card-header text-center py-1">
+                                                <h6 class="card-title mb-0">
+                                                    <i class="bi bi-shield-lock me-1"></i>Đổi mật khẩu
+                                                </h6>
+                                            </div>
+                                            <div class="card-body p-2">
+                                                <form id="changePasswordForm">
+                                                    <div class="mb-1">
+                                                        <label for="currentPassword" class="form-label">Mật khẩu hiện tại *</label>
+                                                        <div class="input-group">
+                                                            <input type="password" class="form-control" id="currentPassword" required>
+                                                            <button class="btn btn-outline-secondary" type="button" id="toggleCurrentPassword">
+                                                                <i class="bi bi-eye"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-1">
+                                                        <label for="newPasswordChange" class="form-label">Mật khẩu mới *</label>
+                                                        <div class="input-group">
+                                                            <input type="password" class="form-control" id="newPasswordChange" required>
+                                                            <button class="btn btn-outline-secondary" type="button" id="toggleNewPasswordChange">
+                                                                <i class="bi bi-eye"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="strength-meter mt-1">
+                                                            <div class="strength-bar" id="changeStrengthBar"></div>
+                                                        </div>
+                                                        <small class="text-muted" id="changeStrengthText">Nhập mật khẩu để kiểm tra độ mạnh</small>
+                                                    </div>
+                                                    <div class="mb-1">
+                                                        <label for="confirmNewPasswordChange" class="form-label">Xác nhận mật khẩu mới *</label>
+                                                        <div class="input-group">
+                                                            <input type="password" class="form-control" id="confirmNewPasswordChange" required>
+                                                            <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPasswordChange">
+                                                                <i class="bi bi-eye"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <small class="text-muted d-block mb-1">
+                                                        <i class="bi bi-info-circle me-1"></i>
+                                                        Mật khẩu nên có ít nhất 8 ký tự, bao gồm chữ hoa, số và ký tự đặc biệt
+                                                    </small>
+                                                    <div class="d-flex gap-2">
+                                                        <button type="submit" class="btn btn-primary">
+                                                            <i class="bi bi-shield-check me-1"></i>Đổi mật khẩu
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-secondary">
+                                                            <i class="bi bi-x me-1"></i>Hủy
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Management Tab -->
+                    <div id="addressTab" class="dashboard-tab" style="display: none;">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Quản Lý Địa Chỉ Giao Hàng</h5>
+                                <div>
+                                    <button class="btn btn-sm btn-primary" onclick="openAddressModal()">
+                                        <i class="bi bi-plus-circle"></i> Thêm Địa Chỉ Mới
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <!-- Address Search and Filter -->
+                                <div class="address-search-container">
+                                    <input type="text" class="form-control address-search-input" id="addressSearch" 
+                                           placeholder="Tìm kiếm địa chỉ theo tên, số điện thoại, địa chỉ...">
+                                    <i class="bi bi-search address-search-icon"></i>
+                                </div>
+                                <!-- Address Statistics -->
+                                <div class="row mb-4">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card bg-info text-white">
+                                            <div class="card-body text-center">
+                                                <i class="bi bi-geo-alt-fill mb-2" style="font-size: 2rem;"></i>
+                                                <h6 class="card-title">Tổng Địa Chỉ</h6>
+                                                <h4 id="totalAddresses">0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card bg-success text-white">
+                                            <div class="card-body text-center">
+                                                <i class="bi bi-star-fill mb-2" style="font-size: 2rem;"></i>
+                                                <h6 class="card-title">Địa Chỉ Mặc Định</h6>
+                                                <h4 id="defaultAddress">1</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card bg-warning text-white">
+                                            <div class="card-body text-center">
+                                                <i class="bi bi-house-fill mb-2" style="font-size: 2rem;"></i>
+                                                <h6 class="card-title">Địa Chỉ Khác</h6>
+                                                <h4 id="otherAddresses">0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Address List -->
+                                <div id="addressList">
+                                    <!-- Address items will be loaded here by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Orders Tab -->
+                    <div id="ordersTab" class="dashboard-tab" style="display: none;">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Quản Lý Đơn Hàng</h5>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary" onclick="refreshOrders()">
+                                        <i class="bi bi-arrow-clockwise"></i> Làm mới
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <!-- Order Statistics -->
+                                <div class="row mb-4">
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="card order-status-pending text-white" style="cursor: pointer;" onclick="filterOrdersByStatus('pending')">
+                                            <div class="card-body text-center">
+                                                <i class="bi bi-clock-history mb-2" style="font-size: 2rem;"></i>
+                                                <h6 class="card-title">Chờ xác nhận</h6>
+                                                <h4 id="pendingCount">2</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="card order-status-shipping text-white" style="cursor: pointer;" onclick="filterOrdersByStatus('shipping')">
+                                            <div class="card-body text-center">
+                                                <i class="bi bi-truck mb-2" style="font-size: 2rem;"></i>
+                                                <h6 class="card-title">Đang giao</h6>
+                                                <h4 id="shippingCount">1</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="card order-status-delivered text-white" style="cursor: pointer;" onclick="filterOrdersByStatus('delivered')">
+                                            <div class="card-body text-center">
+                                                <i class="bi bi-check-circle mb-2" style="font-size: 2rem;"></i>
+                                                <h6 class="card-title">Đã giao</h6>
+                                                <h4 id="deliveredCount">5</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="card order-status-all text-white" style="cursor: pointer;" onclick="filterOrdersByStatus('')">
+                                            <div class="card-body text-center">
+                                                <i class="bi bi-basket mb-2" style="font-size: 2rem;"></i>
+                                                <h6 class="card-title">Tất cả đơn</h6>
+                                                <h4 id="totalCount">8</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Orders List -->
+                                <div id="ordersList">
+                                    <!-- Sample orders will be loaded here by JavaScript -->
+                                </div>
+
+                                <!-- Pagination -->
+                                <nav aria-label="Orders pagination" class="mt-4">
+                                    <ul class="pagination justify-content-center" id="ordersPagination">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#">Trước</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Sau</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Theme management
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        
+        function updateTheme(theme) {
+            document.documentElement.setAttribute('data-bs-theme', theme);
+            themeIcon.className = theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+            localStorage.setItem('theme', theme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            updateTheme(newTheme);
+        });
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        updateTheme(savedTheme);
+
+        // Advanced background effects
+        function createDynamicParticles() {
+            const background = document.querySelector('.animated-background');
+            
+            // Create additional floating particles
+            for (let i = 0; i < 15; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * -10 + 's';
+                particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                background.appendChild(particle);
+            }
+
+            // Create additional sparkles
+            for (let i = 0; i < 20; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.top = Math.random() * 100 + '%';
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.animationDelay = Math.random() * -3 + 's';
+                sparkle.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                background.appendChild(sparkle);
+            }
+
+            // Create additional geometric shapes
+            const shapes = ['circle', 'triangle', 'square', 'diamond'];
+            for (let i = 0; i < 12; i++) {
+                const shape = document.createElement('div');
+                const randomShape = shapes[Math.floor(Math.random() * shapes.length)];
+                shape.className = `geo-shape ${randomShape}`;
+                shape.style.top = Math.random() * 100 + '%';
+                shape.style.left = Math.random() * 100 + '%';
+                shape.style.animationDelay = Math.random() * -12 + 's';
+                shape.style.animationDuration = (Math.random() * 5 + 10) + 's';
+                background.appendChild(shape);
+            }
+        }
+
+        // Mouse interaction with background
+        function addMouseInteraction() {
+            let mouseX = 0;
+            let mouseY = 0;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX / window.innerWidth;
+                mouseY = e.clientY / window.innerHeight;
+
+                // Update floating icons based on mouse position
+                const floatingIcons = document.querySelectorAll('.floating-icons');
+                floatingIcons.forEach((icon, index) => {
+                    const speed = (index % 3 + 1) * 0.5;
+                    const offsetX = (mouseX - 0.5) * speed * 20;
+                    const offsetY = (mouseY - 0.5) * speed * 20;
+                    icon.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+                });
+
+                // Update particles
+                const particles = document.querySelectorAll('.particle');
+                particles.forEach((particle, index) => {
+                    const speed = (index % 2 + 1) * 0.3;
+                    const offsetX = (mouseX - 0.5) * speed * 15;
+                    particle.style.transform = `translateX(${offsetX}px)`;
+                });
+            });
+        }
+
+        // Random color pulse effect
+        function addColorPulse() {
+            const shapes = document.querySelectorAll('.geo-shape, .sparkle');
+            
+            setInterval(() => {
+                shapes.forEach(shape => {
+                    if (Math.random() > 0.8) {
+                        shape.style.animationPlayState = 'paused';
+                        shape.style.transform = shape.style.transform + ' scale(1.5)';
+                        shape.style.opacity = '0.3';
+                        
+                        setTimeout(() => {
+                            shape.style.animationPlayState = 'running';
+                            shape.style.transform = shape.style.transform.replace(' scale(1.5)', '');
+                            shape.style.opacity = '';
+                        }, 500);
+                    }
+                });
+            }, 2000);
+        }
+
+        // Floating cosmetic icons with special effects
+        function enhanceFloatingIcons() {
+            const cosmeticIcons = document.querySelectorAll('.floating-icons');
+            
+            cosmeticIcons.forEach((icon, index) => {
+                // Add hover effect
+                icon.addEventListener('mouseenter', () => {
+                    icon.style.transform = 'scale(1.5) rotate(360deg)';
+                    icon.style.opacity = '0.5';
+                    icon.style.color = 'var(--nature-green-accent)';
+                    icon.style.filter = 'drop-shadow(0 0 20px var(--nature-green-accent))';
+                });
+                
+                icon.addEventListener('mouseleave', () => {
+                    icon.style.transform = '';
+                    icon.style.opacity = '';
+                    icon.style.color = '';
+                    icon.style.filter = '';
+                });
+
+                // Random twinkle effect
+                if (Math.random() > 0.7) {
+                    setInterval(() => {
+                        icon.style.opacity = Math.random() * 0.3 + 0.1;
+                        setTimeout(() => {
+                            icon.style.opacity = '';
+                        }, 200);
+                    }, Math.random() * 3000 + 2000);
+                }
+            });
+        }
+
+        // Test avatar function (simplified)
+        function testAvatarFunction() {
+            const avatarInput = document.getElementById('avatarInput');
+            if (avatarInput) {
+                avatarInput.click();
+            } else {
+                // Create input if not found
+                ensureAvatarInput();
+                const newInput = document.getElementById('avatarInput');
+                if (newInput) {
+                    newInput.click();
+                }
+            }
+        }
+
+        // Ensure avatar input exists
+        function ensureAvatarInput() {
+            let avatarInput = document.getElementById('avatarInput');
+            const avatarElement = document.getElementById('profileAvatar');
+            
+            if (!avatarInput && avatarElement) {
+                // Create the input
+                avatarInput = document.createElement('input');
+                avatarInput.type = 'file';
+                avatarInput.id = 'avatarInput';
+                avatarInput.accept = 'image/*';
+                avatarInput.style.display = 'none';
+                avatarInput.onchange = handleAvatarChange;
+                
+                // Add to avatar element
+                avatarElement.appendChild(avatarInput);
+            }
+            
+            return avatarInput;
+        }
+
+        // Initialize all background effects
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                createDynamicParticles();
+                addMouseInteraction();
+                addColorPulse();
+                enhanceFloatingIcons();
+                loadSavedAvatar(); // Load saved avatar when page loads
+                
+                // Ensure avatar input exists after page load
+                ensureAvatarInput();
+            }, 1000);
+        });
+
+        // Toast notification function
+        function showToast(message, type = 'success') {
+            const toastContainer = document.createElement('div');
+            toastContainer.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 9999;
+                min-width: 300px;
+            `;
+            
+            toastContainer.innerHTML = `
+                <div class="toast show align-items-center text-white bg-${type === 'success' ? 'success' : type === 'error' ? 'danger' : 'info'} border-0" role="alert">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            <i class="bi bi-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-triangle' : 'info-circle'} me-2"></i>
+                            ${message}
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" onclick="this.closest('div[style*=\"position: fixed\"]').remove()"></button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(toastContainer);
+            
+            // Auto remove after 4 seconds
+            setTimeout(() => {
+                if (toastContainer.parentNode) {
+                    toastContainer.remove();
+                }
+            }, 4000);
+        }
+
+        // Show/hide sections
+        function showSection(sectionId) {
+            console.log('showSection called with:', sectionId);
+            document.querySelectorAll('.form-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+                console.log('Section activated:', sectionId);
+            } else {
+                console.error('Section not found:', sectionId);
+            }
+        }
+
+        // Dashboard tabs
+        function showDashboardTab(tabId) {
+            document.querySelectorAll('.dashboard-tab').forEach(tab => {
+                tab.style.display = 'none';
+            });
+            document.getElementById(tabId).style.display = 'block';
+            
+            // Load specific content based on tab
+            if (tabId === 'addressTab') {
+                loadAddresses();
+            } else if (tabId === 'ordersTab') {
+                loadOrders();
+                updateOrderStatistics();
+            }
+            
+            // Update sidebar nav
+            document.querySelectorAll('.sidebar .nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        // Password strength checker
+        function checkPasswordStrength(password, barId, textId) {
+            const bar = document.getElementById(barId);
+            const text = document.getElementById(textId);
+            
+            if (password.length === 0) {
+                bar.style.width = '0%';
+                bar.className = 'strength-bar';
+                text.textContent = 'Nhập mật khẩu để kiểm tra độ mạnh';
+                return;
+            }
+            
+            let score = 0;
+            if (password.length >= 8) score++;
+            if (/[a-z]/.test(password)) score++;
+            if (/[A-Z]/.test(password)) score++;
+            if (/[0-9]/.test(password)) score++;
+            if (/[^A-Za-z0-9]/.test(password)) score++;
+            
+            if (score <= 2) {
+                bar.style.width = '33%';
+                bar.className = 'strength-bar strength-weak';
+                text.textContent = 'Mật khẩu yếu';
+            } else if (score <= 3) {
+                bar.style.width = '66%';
+                bar.className = 'strength-bar strength-medium';
+                text.textContent = 'Mật khẩu trung bình';
+            } else {
+                bar.style.width = '100%';
+                bar.className = 'strength-bar strength-strong';
+                text.textContent = 'Mật khẩu mạnh';
+            }
+        }
+
+        // Password visibility toggles
+        function setupPasswordToggle(inputId, buttonId) {
+            console.log('Setting up password toggle for:', inputId, buttonId);
+            const input = document.getElementById(inputId);
+            const button = document.getElementById(buttonId);
+            
+            console.log('Elements found:', { input: !!input, button: !!button });
+            
+            if (input && button) {
+                button.addEventListener('click', () => {
+                    console.log('Password toggle clicked for:', inputId);
+                    const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+                    input.setAttribute('type', type);
+                    const icon = button.querySelector('i');
+                    if (icon) {
+                        icon.className = type === 'password' ? 'bi bi-eye' : 'bi bi-eye-slash';
+                        console.log('Password visibility changed to:', type);
+                    } else {
+                        console.error('Icon not found in button');
+                    }
+                });
+                console.log('Password toggle setup complete for:', inputId);
+            } else {
+                console.error('Failed to setup password toggle. Input:', !!input, 'Button:', !!button);
+            }
+        }
+
+        // Avatar change handler
+        function handleAvatarChange(event) {
+            const file = event.target.files[0];
+            if (file) {
+                // Validate file type
+                if (!file.type.startsWith('image/')) {
+                    return;
+                }
+                
+                // Validate file size (max 5MB)
+                if (file.size > 5 * 1024 * 1024) {
+                    return;
+                }
+                
+                // Open crop modal
+                openCropModal(file)
+                    .then(croppedDataUrl => {
+                        // Apply the cropped image to avatar
+                        updateAvatarWithImage(croppedDataUrl);
+                        localStorage.setItem('userAvatar', croppedDataUrl);
+                    })
+                    .catch(error => {
+                        console.error('Lỗi khi crop image:', error);
+                    });
+            }
+        }
+
+        function updateAvatarWithImage(imageDataUrl) {
+            const avatarElement = document.getElementById('profileAvatar');
+            
+            if (avatarElement) {
+                // Set background image with highest quality settings
+                avatarElement.style.backgroundImage = `url(${imageDataUrl})`;
+                avatarElement.style.backgroundSize = 'cover';
+                avatarElement.style.backgroundPosition = 'center center';
+                avatarElement.style.backgroundRepeat = 'no-repeat';
+                avatarElement.style.imageRendering = 'optimizeQuality';
+                avatarElement.style.imageRendering = 'high-quality';
+                avatarElement.style.imageRendering = '-webkit-optimize-contrast';
+                avatarElement.style.filter = 'contrast(1.1) brightness(1.05) saturate(1.1)';
+                avatarElement.style.webkitFilter = 'contrast(1.1) brightness(1.05) saturate(1.1)';
+                avatarElement.style.webkitBackfaceVisibility = 'hidden';
+                avatarElement.style.backfaceVisibility = 'hidden';
+                avatarElement.style.webkitTransform = 'translateZ(0)';
+                avatarElement.style.transform = 'translateZ(0)';
+                
+                // Clear the icon but keep the camera button
+                const personIcon = avatarElement.querySelector('.bi-person');
+                if (personIcon) {
+                    personIcon.style.display = 'none';
+                }
+                
+                // Remove all content - no camera button needed
+                avatarElement.innerHTML = `
+                    <input type="file" id="avatarInput" accept="image/*" style="display: none;" onchange="handleAvatarChange(event)">
+                `;
+            }
+        }
+
+        // Image Cropping Functions
+        let currentImage = null;
+        let cropCanvas = null;
+        let cropCtx = null;
+        let isDragging = false;
+        let dragStart = { x: 0, y: 0 };
+        let imagePosition = { x: 0, y: 0 };
+        let imageScale = 1;
+
+        function openCropModal(file) {
+            return new Promise((resolve, reject) => {
+                const modal = new bootstrap.Modal(document.getElementById('cropModal'));
+                cropCanvas = document.getElementById('cropCanvas');
+                cropCtx = cropCanvas.getContext('2d');
+                
+                // Enable high-quality rendering
+                cropCtx.imageSmoothingEnabled = true;
+                cropCtx.imageSmoothingQuality = 'high';
+                
+                const img = new Image();
+                img.onload = function() {
+                    currentImage = img;
+                    resetCropSettings();
+                    drawCanvas();
+                    modal.show();
+                    
+                    // Setup event listeners
+                    setupCropEventListeners(resolve, reject, modal);
+                };
+                
+                img.onerror = () => reject('Không thể load ảnh');
+                img.src = URL.createObjectURL(file);
+            });
+        }
+
+        function setupCropEventListeners(resolve, reject, modal) {
+            const zoomSlider = document.getElementById('zoomSlider');
+            const resetBtn = document.getElementById('resetCrop');
+            const applyCropBtn = document.getElementById('applyCrop');
+
+            // Zoom functionality with smooth animation
+            zoomSlider.oninput = function() {
+                imageScale = parseFloat(this.value);
+                // Use requestAnimationFrame for smoother zoom
+                requestAnimationFrame(() => {
+                    drawCanvas();
+                });
+            };
+
+            // Reset crop
+            resetBtn.onclick = function() {
+                resetCropSettings();
+                zoomSlider.value = 1;
+                drawCanvas();
+            };
+
+            // Apply crop
+            applyCropBtn.onclick = function() {
+                try {
+                    // Create canvas with better scaling for higher quality
+                    const tempCanvas = document.createElement('canvas');
+                    const tempCtx = tempCanvas.getContext('2d');
+                    
+                    // Set high DPI scaling for better quality - tăng kích thước output
+                    const scale = window.devicePixelRatio || 1;
+                    const size = 300 * scale; // Giảm từ 400 xuống 300
+                    
+                    tempCanvas.width = size;
+                    tempCanvas.height = size;
+                    tempCanvas.style.width = '300px'; // Giảm từ 400px xuống 300px
+                    tempCanvas.style.height = '300px'; // Giảm từ 400px xuống 300px
+                    
+                    // Scale context for high DPI with smoother rendering
+                    tempCtx.scale(scale, scale);
+                    tempCtx.imageSmoothingEnabled = true;
+                    tempCtx.imageSmoothingQuality = 'high';
+                    tempCtx.webkitImageSmoothingEnabled = true;
+                    tempCtx.mozImageSmoothingEnabled = true;
+                    tempCtx.msImageSmoothingEnabled = true;
+                    
+                    // Draw the cropped area with high quality
+                    const scaledWidth = currentImage.width * imageScale;
+                    const scaledHeight = currentImage.height * imageScale;
+                    
+                    tempCtx.drawImage(
+                        currentImage,
+                        imagePosition.x,
+                        imagePosition.y,
+                        scaledWidth,
+                        scaledHeight
+                    );
+                    
+                    // Create high quality PNG with maximum quality
+                    const croppedDataUrl = tempCanvas.toDataURL('image/png', 1.0);
+                    modal.hide();
+                    resolve(croppedDataUrl);
+                } catch (error) {
+                    reject(error);
+                }
+            };
+
+            // Mouse events for dragging
+            cropCanvas.addEventListener('mousedown', startDrag);
+            cropCanvas.addEventListener('mousemove', drag);
+            cropCanvas.addEventListener('mouseup', stopDrag);
+            cropCanvas.addEventListener('mouseleave', stopDrag);
+
+            // Touch events for mobile
+            cropCanvas.addEventListener('touchstart', handleTouch);
+            cropCanvas.addEventListener('touchmove', handleTouch);
+            cropCanvas.addEventListener('touchend', stopDrag);
+        }
+
+        function resetCropSettings() {
+            if (!currentImage) return;
+            
+            const canvasSize = 300; // Giảm từ 400 xuống 300
+            const imgAspect = currentImage.width / currentImage.height;
+            
+            // Center the image and fit it to canvas
+            if (imgAspect > 1) {
+                // Landscape image
+                imageScale = canvasSize / currentImage.width;
+            } else {
+                // Portrait image
+                imageScale = canvasSize / currentImage.height;
+            }
+            
+            const scaledWidth = currentImage.width * imageScale;
+            const scaledHeight = currentImage.height * imageScale;
+            
+            imagePosition.x = (canvasSize - scaledWidth) / 2;
+            imagePosition.y = (canvasSize - scaledHeight) / 2;
+        }
+
+        function drawCanvas() {
+            if (!currentImage || !cropCtx) return;
+            
+            const canvasSize = 300; // Giảm từ 400 xuống 300
+            
+            // Clear canvas
+            cropCtx.clearRect(0, 0, canvasSize, canvasSize);
+            
+            // Enable high-quality rendering with smoother interpolation
+            cropCtx.imageSmoothingEnabled = true;
+            cropCtx.imageSmoothingQuality = 'high';
+            cropCtx.webkitImageSmoothingEnabled = true;
+            cropCtx.mozImageSmoothingEnabled = true;
+            cropCtx.msImageSmoothingEnabled = true;
+            
+            // Draw image with high quality
+            const scaledWidth = currentImage.width * imageScale;
+            const scaledHeight = currentImage.height * imageScale;
+            
+            cropCtx.drawImage(
+                currentImage,
+                imagePosition.x,
+                imagePosition.y,
+                scaledWidth,
+                scaledHeight
+            );
+            
+            // Draw crop overlay with smoother edges
+            cropCtx.save();
+            cropCtx.globalAlpha = 0.4;
+            cropCtx.fillStyle = '#000';
+            cropCtx.fillRect(0, 0, canvasSize, canvasSize);
+            
+            // Clear center circle for crop area with smoother edges
+            cropCtx.globalCompositeOperation = 'destination-out';
+            cropCtx.beginPath();
+            cropCtx.arc(canvasSize/2, canvasSize/2, canvasSize/2 - 15, 0, 2 * Math.PI); // Giảm border từ 10 xuống 15
+            cropCtx.fill();
+            
+            // Add subtle border around crop area
+            cropCtx.globalCompositeOperation = 'source-over';
+            cropCtx.globalAlpha = 0.8;
+            cropCtx.strokeStyle = 'var(--nature-green-accent)';
+            cropCtx.lineWidth = 3;
+            cropCtx.beginPath();
+            cropCtx.arc(canvasSize/2, canvasSize/2, canvasSize/2 - 15, 0, 2 * Math.PI);
+            cropCtx.stroke();
+            
+            cropCtx.restore();
+        }
+
+        function startDrag(e) {
+            isDragging = true;
+            const rect = cropCanvas.getBoundingClientRect();
+            dragStart.x = e.clientX - rect.left - imagePosition.x;
+            dragStart.y = e.clientY - rect.top - imagePosition.y;
+            cropCanvas.style.cursor = 'grabbing';
+            cropCanvas.style.transform = 'scale(1.02)'; // Thêm hiệu ứng zoom nhẹ khi kéo
+        }
+
+        function drag(e) {
+            if (!isDragging) return;
+            
+            const rect = cropCanvas.getBoundingClientRect();
+            imagePosition.x = e.clientX - rect.left - dragStart.x;
+            imagePosition.y = e.clientY - rect.top - dragStart.y;
+            
+            // Smooth drawing with requestAnimationFrame
+            requestAnimationFrame(() => {
+                drawCanvas();
+            });
+        }
+
+        function stopDrag() {
+            isDragging = false;
+            cropCanvas.style.cursor = 'grab';
+            cropCanvas.style.transform = 'scale(1)'; // Trở về kích thước bình thường
+        }
+
+        function handleTouch(e) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const mouseEvent = new MouseEvent(e.type.replace('touch', 'mouse'), {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+            cropCanvas.dispatchEvent(mouseEvent);
+        }
+
+        // Load saved avatar on page load
+        function loadSavedAvatar() {
+            const savedAvatar = localStorage.getItem('userAvatar');
+            
+            // Ensure avatar input exists
+            ensureAvatarInput();
+            
+            if (savedAvatar) {
+                updateAvatarWithImage(savedAvatar);
+            }
+        }
+
+        // Sync avatar across all tabs
+        function syncAvatarAcrossTabs(avatarContent) {
+            const avatarElement = document.getElementById('profileAvatar');
+            
+            if (avatarElement && typeof avatarContent === 'string') {
+                avatarElement.innerHTML = avatarContent;
+                avatarElement.style.backgroundImage = '';
+                // Ensure consistent styling
+                avatarElement.style.width = '200px';
+                avatarElement.style.height = '200px';
+                avatarElement.style.fontSize = '4rem';
+                avatarElement.style.borderRadius = '50%';
+                avatarElement.style.display = 'flex';
+                avatarElement.style.alignItems = 'center';
+                avatarElement.style.justifyContent = 'center';
+                avatarElement.style.minWidth = '200px';
+                avatarElement.style.minHeight = '200px';
+            }
+        }
+
+        // Password strength monitoring
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize password toggles
+            setupPasswordToggle('loginPassword', 'toggleLoginPassword');
+            setupPasswordToggle('registerPassword', 'toggleRegisterPassword');
+            setupPasswordToggle('currentPassword', 'toggleCurrentPassword');
+            setupPasswordToggle('newPasswordChange', 'toggleNewPasswordChange');
+            setupPasswordToggle('confirmNewPasswordChange', 'toggleConfirmPasswordChange');
+            setupPasswordToggle('newPassword', 'toggleNewPassword');
+            
+            const registerPassword = document.getElementById('registerPassword');
+            const newPasswordChange = document.getElementById('newPasswordChange');
+            const newPassword = document.getElementById('newPassword');
+
+            if (registerPassword) {
+                registerPassword.addEventListener('input', (e) => {
+                    checkPasswordStrength(e.target.value, 'strengthBar', 'strengthText');
+                });
+            }
+
+            if (newPasswordChange) {
+                newPasswordChange.addEventListener('input', (e) => {
+                    checkPasswordStrength(e.target.value, 'changeStrengthBar', 'changeStrengthText');
+                });
+            }
+
+            if (newPassword) {
+                newPassword.addEventListener('input', (e) => {
+                    checkPasswordStrength(e.target.value, 'resetStrengthBar', 'resetStrengthText');
+                });
+            }
+        });
+
+        // Form submissions - Moved inside DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Login form
+            const loginForm = document.getElementById('loginForm');
+            if (loginForm) {
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    console.log('Login form submitted');
+                    // Simulate login
+                    showSection('dashboardSection');
+                });
+            }
+
+            // Register form
+            const registerForm = document.getElementById('registerForm');
+            if (registerForm) {
+                registerForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const password = document.getElementById('registerPassword').value;
+                    const confirmPassword = document.getElementById('confirmPassword').value;
+                    
+                    if (password !== confirmPassword) {
+                        alert('Mật khẩu xác nhận không khớp!');
+                        return;
+                    }
+                    
+                    alert('Đăng ký thành công! Vui lòng đăng nhập.');
+                    showSection('loginSection');
+                });
+            }
+
+            // Forgot password form
+            const forgotPasswordForm = document.getElementById('forgotPasswordForm');
+            if (forgotPasswordForm) {
+                forgotPasswordForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    showSection('resetPasswordSection');
+                });
+            }
+
+            // Reset password form
+            const resetPasswordForm = document.getElementById('resetPasswordForm');
+            if (resetPasswordForm) {
+                resetPasswordForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const newPassword = document.getElementById('newPassword').value;
+                    const confirmNewPassword = document.getElementById('confirmNewPassword').value;
+                    
+                    if (newPassword !== confirmNewPassword) {
+                        alert('Mật khẩu xác nhận không khớp!');
+                        return;
+                    }
+                    
+                    alert('Đặt lại mật khẩu thành công! Vui lòng đăng nhập.');
+                    showSection('loginSection');
+                });
+            }
+
+            // Change password form
+            const changePasswordForm = document.getElementById('changePasswordForm');
+            if (changePasswordForm) {
+                changePasswordForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const newPassword = document.getElementById('newPasswordChange').value;
+                    const confirmPassword = document.getElementById('confirmNewPasswordChange').value;
+                    
+                    if (newPassword !== confirmPassword) {
+                        alert('Mật khẩu xác nhận không khớp!');
+                        return;
+                    }
+                    
+                    alert('Thay đổi mật khẩu thành công!');
+                });
+            }
+        });
+
+        // Handle login function
+        function handleLogin(event) {
+            console.log('handleLogin called');
+            event.preventDefault();
+            
+            const username = document.getElementById('loginUsername').value.trim();
+            const password = document.getElementById('loginPassword').value.trim();
+            
+            console.log('Login attempt:', { username, password: password ? '***' : '' });
+            
+            if (!username || !password) {
+                alert('Vui lòng nhập đầy đủ thông tin đăng nhập!');
+                return;
+            }
+            
+            // Simulate login success
+            console.log('Login successful, redirecting to dashboard');
+            showSection('dashboardSection');
+        }
+
+        // Function to prevent Enter key submission on input fields
+        function preventEnterSubmit(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                event.stopPropagation();
+                event.stopImmediatePropagation();
+                return false;
+            }
+        }
+
+        // Prevent form submission with Enter key
+        document.getElementById('profileForm').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                return false;
+            }
+        });
+
+        // Also prevent on keypress and keyup for extra safety
+        document.getElementById('profileForm').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                return false;
+            }
+        });
+
+        document.getElementById('profileForm').addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                return false;
+            }
+        });
+
+        // Handle form submission only via submit button
+        document.getElementById('profileForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Check if submission is triggered by Enter key (additional safety)
+            if (e.submitter && e.submitter.type === 'submit' && e.submitter.textContent.includes('Lưu thay đổi')) {
+                // This is a legitimate button click submission
+                processProfileFormSubmission();
+            } else {
+                // Prevent any other type of submission silently
+                return false;
+            }
+        });
+
+        // Function to handle the actual form submission
+        function processProfileFormSubmission() {
+            // Get updated values from form
+            const updatedName = document.getElementById('editName').value;
+            const updatedEmail = document.getElementById('editEmail').value;
+            const updatedPhone = document.getElementById('editPhone').value;
+            const updatedBirthday = document.getElementById('editBirthday').value;
+            const emailNotifications = document.getElementById('emailNotifications').checked;
+            
+            // Get selected gender
+            let updatedGender = '';
+            const genderRadios = document.querySelectorAll('input[name="gender"]');
+            genderRadios.forEach(radio => {
+                if (radio.checked) {
+                    updatedGender = radio.value;
+                }
+            });
+            
+            // Update display elements
+            document.getElementById('profileName').textContent = updatedName;
+            document.getElementById('profileEmail').textContent = updatedEmail;
+            
+            // Update profile data object (for future use)
+            const profileData = {
+                name: updatedName,
+                email: updatedEmail,
+                phone: updatedPhone,
+                birthday: updatedBirthday,
+                gender: updatedGender,
+                emailNotifications: emailNotifications
+            };
+            
+            // Save to localStorage for persistence
+            localStorage.setItem('profileData', JSON.stringify(profileData));
+            
+            // Close modal if exists
+            const modal = bootstrap.Modal.getInstance(document.getElementById('editProfileModal'));
+            if (modal) {
+                modal.hide();
+            }
+        }
+
+        // Reset profile form function
+        function resetProfileForm() {
+            const form = document.getElementById('profileForm');
+            if (form) {
+                // Load saved data from localStorage and restore to form
+                const savedData = localStorage.getItem('profileData');
+                if (savedData) {
+                    const profileData = JSON.parse(savedData);
+                    
+                    // Restore form fields with saved data
+                    document.getElementById('editName').value = profileData.name || '';
+                    document.getElementById('editEmail').value = profileData.email || '';
+                    document.getElementById('editPhone').value = profileData.phone || '';
+                    document.getElementById('editBirthday').value = profileData.birthday || '';
+                    
+                    // Set gender radio button
+                    if (profileData.gender) {
+                        const genderRadio = document.querySelector(`input[name="gender"][value="${profileData.gender}"]`);
+                        if (genderRadio) {
+                            genderRadio.checked = true;
+                        }
+                    }
+                    
+                    // Set email notification preference
+                    const emailNotifications = document.getElementById('emailNotifications');
+                    if (emailNotifications) {
+                        emailNotifications.checked = profileData.emailNotifications !== undefined ? profileData.emailNotifications : true;
+                    }
+                } else {
+                    // If no saved data, reset to default values
+                    form.reset();
+                }
+            }
+        }
+
+        // Load profile data on page load
+        function loadProfileData() {
+            const savedData = localStorage.getItem('profileData');
+            if (savedData) {
+                const profileData = JSON.parse(savedData);
+                
+                // Update display elements
+                const profileNameElement = document.getElementById('profileName');
+                const profileEmailElement = document.getElementById('profileEmail');
+                
+                if (profileNameElement && profileData.name) {
+                    profileNameElement.textContent = profileData.name;
+                }
+                if (profileEmailElement && profileData.email) {
+                    profileEmailElement.textContent = profileData.email;
+                }
+                
+                // Update form fields when available
+                if (document.getElementById('editName')) {
+                    document.getElementById('editName').value = profileData.name || '';
+                }
+                if (document.getElementById('editEmail')) {
+                    document.getElementById('editEmail').value = profileData.email || '';
+                }
+                if (document.getElementById('editPhone')) {
+                    document.getElementById('editPhone').value = profileData.phone || '';
+                }
+                if (document.getElementById('editBirthday')) {
+                    document.getElementById('editBirthday').value = profileData.birthday || '';
+                }
+                
+                // Set gender radio button
+                if (profileData.gender) {
+                    const genderRadio = document.querySelector(`input[name="gender"][value="${profileData.gender}"]`);
+                    if (genderRadio) {
+                        genderRadio.checked = true;
+                    }
+                }
+                
+                // Set email notification preference
+                const emailNotifications = document.getElementById('emailNotifications');
+                if (emailNotifications) {
+                    emailNotifications.checked = profileData.emailNotifications !== undefined ? profileData.emailNotifications : true;
+                }
+            }
+        }
+
+        // Theme radio buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load saved profile data
+            loadProfileData();
+        });
+
+        // Logout function
+        function logout() {
+            showSection('loginSection');
+        }
+
+        // Initialize profile data
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load saved profile data or use default
+            let profileData = JSON.parse(localStorage.getItem('profileData')) || {
+                name: 'Phạm Văn Giàu',
+                email: 'nguyenvana@example.com',
+                phone: '0123456789',
+                birthday: '1990-01-15',
+                gender: 'male'
+            };
+
+            // Update profile display
+            document.getElementById('profileName').textContent = profileData.name;
+            document.getElementById('profileEmail').textContent = profileData.email;
+            
+            // Update form fields
+            document.getElementById('editName').value = profileData.name;
+            document.getElementById('editEmail').value = profileData.email;
+            document.getElementById('editPhone').value = profileData.phone;
+            document.getElementById('editBirthday').value = profileData.birthday;
+            
+            // Set gender radio button
+            const genderRadio = document.getElementById(`gender${profileData.gender.charAt(0).toUpperCase() + profileData.gender.slice(1)}`);
+            if (genderRadio) {
+                genderRadio.checked = true;
+            }
+
+            // Update avatar with first letter of name across all tabs
+            const firstLetter = profileData.name.charAt(0).toUpperCase();
+            syncAvatarAcrossTabs(firstLetter);
+
+            // Set current theme in settings
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const themeRadio = document.getElementById(`${currentTheme}Theme`);
+            if (themeRadio) {
+                themeRadio.checked = true;
+            }
+
+            // Initialize orders
+            initializeOrders();
+        });
+
+        // Orders Management System
+        let sampleOrders = [
+            {
+                id: 'DH001',
+                date: '2025-07-20',
+                status: 'pending',
+                total: 1250000,
+                products: [
+                    { name: 'Set kem dưỡng da Laneige', quantity: 1, price: 850000, image: '🧴' },
+                    { name: 'Son môi YSL Rouge Pur Couture', quantity: 1, price: 1200000, image: '�' },
+                    { name: 'Nước hoa hồng Some By Mi', quantity: 1, price: 450000, image: '�' }
+                ],
+                timeline: [
+                    { status: 'Đặt hàng', date: '2025-07-20 14:30', completed: true },
+                    { status: 'Chờ xác nhận', date: '2025-07-20 14:30', completed: false },
+                    { status: 'Đang xử lý', date: '', completed: false },
+                    { status: 'Đang giao', date: '', completed: false },
+                    { status: 'Đã giao', date: '', completed: false }
+                ]
+            },
+            {
+                id: 'DH002',
+                date: '2025-07-18',
+                status: 'shipping',
+                total: 2800000,
+                products: [
+                    { name: 'Serum Vitamin C Klairs', quantity: 2, price: 650000, image: '✨' },
+                    { name: 'Kem chống nắng La Roche-Posay', quantity: 1, price: 580000, image: '☀️' },
+                    { name: 'Mặt nạ The Ordinary Niacinamide', quantity: 3, price: 320000, image: '🎭' }
+                ],
+                timeline: [
+                    { status: 'Đặt hàng', date: '2025-07-18 10:15', completed: true },
+                    { status: 'Chờ xác nhận', date: '2025-07-18 11:00', completed: true },
+                    { status: 'Đang xử lý', date: '2025-07-18 16:30', completed: true },
+                    { status: 'Đang giao', date: '2025-07-19 08:00', completed: true },
+                    { status: 'Đã giao', date: '', completed: false }
+                ]
+            },
+            {
+                id: 'DH003',
+                date: '2025-07-15',
+                status: 'delivered',
+                total: 3500000,
+                products: [
+                    { name: 'Bộ kit làm đẹp Sulwhasoo', quantity: 1, price: 2800000, image: '🎁' },
+                    { name: 'Phấn phủ Innisfree No Sebum', quantity: 2, price: 350000, image: '🌿' }
+                ],
+                timeline: [
+                    { status: 'Đặt hàng', date: '2025-07-15 09:20', completed: true },
+                    { status: 'Chờ xác nhận', date: '2025-07-15 10:00', completed: true },
+                    { status: 'Đang xử lý', date: '2025-07-15 14:30', completed: true },
+                    { status: 'Đang giao', date: '2025-07-16 08:00', completed: true },
+                    { status: 'Đã giao', date: '2025-07-17 16:20', completed: true }
+                ]
+            },
+            {
+                id: 'DH004',
+                date: '2025-07-22',
+                status: 'pending',
+                total: 1650000,
+                products: [
+                    { name: 'Sữa rửa mặt CeraVe Foaming', quantity: 2, price: 380000, image: '🧼' },
+                    { name: 'Tinh chất dưỡng ẩm Hada Labo', quantity: 1, price: 520000, image: '💧' },
+                    { name: 'Mascara Maybelline Lash Sensational', quantity: 1, price: 750000, image: '�️' }
+                ],
+                timeline: [
+                    { status: 'Đặt hàng', date: '2025-07-22 11:45', completed: true },
+                    { status: 'Chờ xác nhận', date: '2025-07-22 11:45', completed: false },
+                    { status: 'Đang xử lý', date: '', completed: false },
+                    { status: 'Đang giao', date: '', completed: false },
+                    { status: 'Đã giao', date: '', completed: false }
+                ]
+            },
+            {
+                id: 'DH005',
+                date: '2025-07-10',
+                status: 'delivered',
+                total: 2200000,
+                products: [
+                    { name: 'Nước tẩy trang Bioderma Sensibio', quantity: 1, price: 650000, image: '🌊' },
+                    { name: 'Kem dưỡng mắt Olay Regenerist', quantity: 1, price: 890000, image: '👀' },
+                    { name: 'Serum Retinol Paula\'s Choice', quantity: 1, price: 1200000, image: '�' }
+                ],
+                timeline: [
+                    { status: 'Đặt hàng', date: '2025-07-10 15:30', completed: true },
+                    { status: 'Chờ xác nhận', date: '2025-07-10 16:00', completed: true },
+                    { status: 'Đang xử lý', date: '2025-07-11 09:00', completed: true },
+                    { status: 'Đang giao', date: '2025-07-12 08:30', completed: true },
+                    { status: 'Đã giao', date: '2025-07-13 14:15', completed: true }
+                ]
+            }
+        ];
+        
+        // Biến để theo dõi trạng thái lọc hiện tại
+        let currentStatusFilter = '';
+
+        function initializeOrders() {
+            loadOrders();
+            updateOrderStatistics();
+        }
+
+        function loadOrders() {
+            const ordersList = document.getElementById('ordersList');
+            if (!ordersList) return;
+
+            // Lọc đơn hàng theo trạng thái hiện tại
+            let filteredOrders = sampleOrders;
+            if (currentStatusFilter) {
+                if (currentStatusFilter === 'shipping') {
+                    // Bao gồm cả 'shipping' và 'processing' cho trạng thái "Đang giao"
+                    filteredOrders = sampleOrders.filter(order => 
+                        order.status === 'shipping' || order.status === 'processing'
+                    );
+                } else {
+                    filteredOrders = sampleOrders.filter(order => order.status === currentStatusFilter);
+                }
+            }
+
+            if (filteredOrders.length === 0) {
+                ordersList.innerHTML = `
+                    <div class="text-center py-5">
+                        <i class="bi bi-inbox display-1 text-muted"></i>
+                        <h5 class="mt-3 text-muted">Không có đơn hàng nào</h5>
+                        <p class="text-muted">Chưa có đơn hàng nào.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const ordersHTML = filteredOrders.map(order => {
+                const statusClass = getStatusClass(order.status);
+                const statusText = getStatusText(order.status);
+                
+                const productsHTML = order.products.map(product => `
+                    <div class="product-item">
+                        <div class="product-image">${product.image}</div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">${product.name}</h6>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">Số lượng: ${product.quantity}</span>
+                                <span class="fw-bold">${formatCurrency(product.price)}</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+                return `
+                    <div class="order-item">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <h6 class="mb-1">Đơn hàng ${order.id}</h6>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>
+                                    ${formatDate(order.date)}
+                                </small>
+                            </div>
+                            <div class="text-end">
+                                <span class="order-status ${statusClass}">${statusText}</span>
+                                <div class="mt-1">
+                                    <span class="fw-bold text-primary">${formatCurrency(order.total)}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-products">
+                            <h6 class="mb-2">
+                                <i class="bi bi-box me-1"></i>
+                                Sản phẩm mỹ phẩm (${order.products.length})
+                            </h6>
+                            ${productsHTML}
+                        </div>
+                        
+                        <div class="mt-3 d-flex gap-2 flex-wrap">
+                            <button class="btn btn-sm btn-outline-primary" onclick="viewOrderDetails('${order.id}')">
+                                <i class="bi bi-eye me-1"></i>Xem chi tiết
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary" onclick="trackOrder('${order.id}')">
+                                <i class="bi bi-truck me-1"></i>Theo dõi
+                            </button>
+                            ${order.status === 'delivered' ? 
+                                '<button class="btn btn-sm btn-outline-warning" onclick="rateOrder(\'' + order.id + '\')"><i class="bi bi-star me-1"></i>Đánh giá</button>' : 
+                                ''
+                            }
+                            ${order.status === 'pending' ? 
+                                '<button class="btn btn-sm btn-outline-danger" onclick="cancelOrder(\'' + order.id + '\')"><i class="bi bi-x-circle me-1"></i>Hủy đơn</button>' : 
+                                ''
+                            }
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            ordersList.innerHTML = ordersHTML;
+        }
+
+        function updateOrderStatistics() {
+            const pending = sampleOrders.filter(order => order.status === 'pending').length;
+            const shipping = sampleOrders.filter(order => order.status === 'shipping' || order.status === 'processing').length;
+            const delivered = sampleOrders.filter(order => order.status === 'delivered').length;
+            const total = sampleOrders.length;
+
+            document.getElementById('pendingCount').textContent = pending;
+            document.getElementById('shippingCount').textContent = shipping;
+            document.getElementById('deliveredCount').textContent = delivered;
+            document.getElementById('totalCount').textContent = total;
+        }
+
+        function getStatusClass(status) {
+            const statusClasses = {
+                'pending': 'status-pending',
+                'processing': 'status-processing',
+                'shipping': 'status-shipping',
+                'delivered': 'status-delivered',
+                'cancelled': 'status-cancelled'
+            };
+            return statusClasses[status] || 'status-pending';
+        }
+
+        function getStatusText(status) {
+            const statusTexts = {
+                'pending': 'Chờ xác nhận',
+                'processing': 'Đang xử lý',
+                'shipping': 'Đang giao',
+                'delivered': 'Đã giao',
+                'cancelled': 'Đã hủy'
+            };
+            return statusTexts[status] || 'Không xác định';
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            }).format(amount);
+        }
+
+        function formatDate(dateString) {
+            return new Date(dateString).toLocaleDateString('vi-VN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        function refreshOrders() {
+            // Reset filter về "Tất cả"
+            currentStatusFilter = '';
+            updateStatusFilterDisplay('');
+            
+            loadOrders();
+            updateOrderStatistics();
+            showToast('Danh sách đơn hàng đã được làm mới!', 'success');
+        }
+
+        function filterOrdersByStatus(status) {
+            // Cập nhật trạng thái lọc hiện tại
+            currentStatusFilter = status;
+            
+            // Cập nhật giao diện để hiển thị trạng thái đang được lọc
+            updateStatusFilterDisplay(status);
+            
+            // Tải lại danh sách đơn hàng với filter mới
+            loadOrders();
+        }
+
+        function updateStatusFilterDisplay(status) {
+            // Xóa class active khỏi tất cả card
+            const cards = document.querySelectorAll('.card[onclick*="filterOrdersByStatus"]');
+            cards.forEach(card => {
+                card.classList.remove('border-warning');
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+            
+            // Thêm hiệu ứng cho card được chọn
+            let selectedCard = null;
+            if (status === 'pending') {
+                selectedCard = cards[0];
+            } else if (status === 'shipping') {
+                selectedCard = cards[1];
+            } else if (status === 'delivered') {
+                selectedCard = cards[2];
+            } else {
+                selectedCard = cards[3];
+            }
+            
+            if (selectedCard) {
+                selectedCard.classList.add('border-warning');
+                selectedCard.style.transform = 'scale(1.05)';
+                selectedCard.style.boxShadow = '0 4px 12px rgba(255, 193, 7, 0.3)';
+                selectedCard.style.transition = 'all 0.3s ease';
+            }
+        }
+
+        function viewOrderDetails(orderId) {
+            const order = sampleOrders.find(o => o.id === orderId);
+            if (!order) return;
+
+            const timelineHTML = order.timeline.map(item => `
+                <div class="timeline-item ${item.completed ? 'completed' : ''}">
+                    <strong>${item.status}</strong>
+                    ${item.date ? `<br><small class="text-muted">${item.date}</small>` : ''}
+                </div>
+            `).join('');
+
+            const modalHTML = `
+                <div class="modal fade" id="orderDetailsModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Chi tiết đơn hàng ${order.id}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h6>Thông tin đơn hàng</h6>
+                                        <p><strong>Mã đơn:</strong> ${order.id}</p>
+                                        <p><strong>Ngày đặt:</strong> ${formatDate(order.date)}</p>
+                                        <p><strong>Trạng thái:</strong> <span class="order-status ${getStatusClass(order.status)}">${getStatusText(order.status)}</span></p>
+                                        <p><strong>Tổng tiền:</strong> ${formatCurrency(order.total)}</p>
+                                        
+                                        <h6 class="mt-4">Sản phẩm</h6>
+                                        <div class="order-products">
+                                            ${order.products.map(product => `
+                                                <div class="product-item">
+                                                    <div class="product-image">${product.image}</div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1">${product.name}</h6>
+                                                        <div class="d-flex justify-content-between">
+                                                            <span>Số lượng: ${product.quantity}</span>
+                                                            <span class="fw-bold">${formatCurrency(product.price)}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Tiến trình đơn hàng</h6>
+                                        <div class="order-timeline">
+                                            ${timelineHTML}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            </div>
+                        </div>
+                    </div                </div>
+            `;
+
+            // Remove existing modal if any
+            const existingModal = document.getElementById('orderDetailsModal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+            const modal = new bootstrap.Modal(document.getElementById('orderDetailsModal'));
+            modal.show();
+        }
+
+        function trackOrder(orderId) {
+            const order = sampleOrders.find(o => o.id === orderId);
+            if (!order) return;
+
+            showToast(`Đang theo dõi đơn hàng ${orderId}. Bạn sẽ nhận được thông báo khi có cập nhật!`, 'info');
+            
+            // Simulate order status update notification
+            setTimeout(() => {
+                if (Math.random() > 0.5) {
+                    simulateOrderStatusUpdate(orderId);
+                }
+            }, 5000);
+        }
+
+        function simulateOrderStatusUpdate(orderId) {
+            const statusUpdates = [
+                'Đơn hàng mỹ phẩm đã được xác nhận',
+                'Các sản phẩm mỹ phẩm đang được đóng gói cẩn thận',
+                'Đơn hàng đã được giao cho đơn vị vận chuyển',
+                'Các sản phẩm làm đẹp đang trên đường giao đến bạn',
+                'Shipper đang chuẩn bị giao hàng tận nơi'
+            ];
+            
+            const randomUpdate = statusUpdates[Math.floor(Math.random() * statusUpdates.length)];
+            showOrderNotification(orderId, randomUpdate);
+        }
+
+        function showOrderNotification(orderId, message) {
+            const notificationHTML = `
+                <div class="notification-toast">
+                    <div class="toast show bg-primary text-white" role="alert">
+                        <div class="toast-header bg-primary text-white">
+                            <i class="bi bi-bell-fill me-2"></i>
+                            <strong class="me-auto">Cập nhật đơn hàng</strong>
+                            <small>Vừa xong</small>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+                        </div>
+                        <div class="toast-body">
+                            <strong>Đơn hàng ${orderId}:</strong><br>
+                            ${message}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.body.insertAdjacentHTML('beforeend', notificationHTML);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                const notification = document.querySelector('.notification-toast');
+                if (notification) {
+                    notification.remove();
+                }
+            }, 5000);
+
+            // Simulate email notification
+            showToast(`📧 Email thông báo đã được gửi đến địa chỉ email của bạn`, 'info');
+        }
+
+        function rateOrder(orderId) {
+            showToast('Chức năng đánh giá đang được phát triển!', 'info');
+        }
+
+        function cancelOrder(orderId) {
+            if (confirm('Bạn có chắc muốn hủy đơn hàng này?')) {
+                const orderIndex = sampleOrders.findIndex(o => o.id === orderId);
+                if (orderIndex !== -1) {
+                    sampleOrders[orderIndex].status = 'cancelled';
+                    loadOrders();
+                    updateOrderStatistics();
+                    showToast(`Đơn hàng ${orderId} đã được hủy thành công!`, 'success');
+                    
+                    // Send email notification
+                    showToast(`📧 Email xác nhận hủy đơn đã được gửi`, 'info');
+                }
+            }
+        }
+
+        // Address Management Functions
+        let addresses = JSON.parse(localStorage.getItem('userAddresses')) || [];
+        let filteredAddresses = addresses;
+        let currentFilter = 'all';
+
+        // Dữ liệu tỉnh/quận/phường đầy đủ
+        const locationData = {
+            "Hà Nội": {
+                "Quận Ba Đình": ["Phường Phúc Xá", "Phường Trúc Bạch", "Phường Vĩnh Phúc", "Phường Cống Vị", "Phường Liễu Giai", "Phường Nguyễn Trung Trực", "Phường Quán Thánh", "Phường Ngọc Hà", "Phường Điện Biên", "Phường Đội Cấn", "Phường Ngọc Khánh", "Phường Kim Mã", "Phường Giảng Võ", "Phường Thành Công"],
+                "Quận Hoàn Kiếm": ["Phường Phúc Tấn", "Phường Đồng Xuân", "Phường Hàng Mã", "Phường Hàng Buồm", "Phường Hàng Đào", "Phường Hàng Bồ", "Phường Cửa Đông", "Phường Lý Thái Tổ", "Phường Hàng Bạc", "Phường Hàng Gai", "Phường Chương Dương Độ", "Phường Cửa Nam", "Phường Hàng Trống", "Phường Tràng Tiền", "Phường Trần Hưng Đạo", "Phường Phan Chu Trinh", "Phường Hàng Bông", "Phường Hàng Grăng"],
+                "Quận Hai Bà Trưng": ["Phường Nguyễn Du", "Phường Bạch Đằng", "Phường Phạm Đình Hổ", "Phường Lê Đại Hành", "Phường Đồng Nhân", "Phường Phố Huế", "Phường Đống Mác", "Phường Thanh Lương", "Phường Thanh Nhàn", "Phường Cầu Dền", "Phường Bách Khoa", "Phường Đồng Tâm", "Phường Vĩnh Tuy", "Phường Bạch Mai", "Phường Quỳnh Mai", "Phường Quỳnh Lôi", "Phường Minh Khai", "Phường Trương Định"],
+                "Quận Đống Đa": ["Phường Cát Linh", "Phường Văn Miếu", "Phường Quốc Tử Giám", "Phường Láng Thượng", "Phường Ô Chợ Dừa", "Phường Văn Chương", "Phường Hàng Bột", "Phường La Thành", "Phường Láng Hạ", "Phường Khâm Thiên", "Phường Thổ Quan", "Phường Nam Đồng", "Phường Trung Phụng", "Phường Quang Trung", "Phường Trung Liệt", "Phường Phương Liên", "Phường Thịnh Quang", "Phường Trung Tự", "Phường Kim Liên", "Phường Phương Mai", "Phường Ngã Tư Sở"],
+                "Quận Tây Hồ": ["Phường Phú Thượng", "Phường Nhật Tân", "Phường Tứ Liên", "Phường Quảng An", "Phường Xuân La", "Phường Yên Phụ", "Phường Bưởi", "Phường Thụy Khuê"],
+                "Quận Cầu Giấy": ["Phường Nghĩa Đô", "Phường Nghĩa Tân", "Phường Mai Dịch", "Phường Dịch Vọng", "Phường Dịch Vọng Hậu", "Phường Quan Hoa", "Phường Yên Hòa", "Phường Trung Hòa"],
+                "Quận Thanh Xuân": ["Phường Hạ Đình", "Phường Thanh Xuân Bắc", "Phường Thanh Xuân Nam", "Phường Khương Thượng", "Phường Khương Đình", "Phường Thanh Xuân Trung", "Phường Nhân Chính", "Phường Thượng Đình", "Phường Khương Mai", "Phường Thanh Xuân Tây", "Phường Phương Liệt"],
+                "Quận Hoàng Mai": ["Phường Thanh Trì", "Phường Vĩnh Hưng", "Phường Định Công", "Phường Mai Động", "Phường Tương Mai", "Phường Đại Kim", "Phường Tân Mai", "Phường Hoàng Văn Thụ", "Phường Trần Phú", "Phường Hoàng Liệt", "Phường Lĩnh Nam", "Phường Thịnh Liệt", "Phường Hoàng Mai", "Phường Đông Dương"],
+                "Quận Long Biên": ["Phường Thượng Thanh", "Phường Ngọc Thụy", "Phường Giang Biên", "Phường Đức Giang", "Phường Việt Hưng", "Phường Gia Thụy", "Phường Ngọc Lâm", "Phường Phúc Lợi", "Phường Bồ Đề", "Phường Sài Đồng", "Phường Long Biên", "Phường Thạch Bàn", "Phường Phúc Đồng", "Phường Cự Khối"],
+                "Huyện Sóc Sơn": ["Thị trấn Sóc Sơn", "Xã Bắc Sơn", "Xã Minh Trí", "Xã Hồng Kỳ", "Xã Nam Sơn", "Xã Trung Giã", "Xã Tân Hưng", "Xã Minh Phú", "Xã Phù Linh", "Xã Bắc Phú", "Xã Tân Minh", "Xã Quang Tiến", "Xã Hiền Ninh", "Xã Tân Dân", "Xã Tiên Dược", "Xã Việt Long", "Xã Xuân Giang", "Xã Mai Đình", "Xã Đức Hoà", "Xã Thanh Xuân", "Xã Đông Xuân", "Xã Kim Lũ", "Xã Phú Cường", "Xã Phú Minh", "Xã Phù Lỗ", "Xã Xuân Thu"],
+                "Huyện Đông Anh": ["Thị trấn Đông Anh", "Xã Bắc Hồng", "Xã Cổ Loa", "Xã Đại Mạch", "Xã Dục Tú", "Xã Hải Bối", "Xã Kim Nỗ", "Xã Liên Hà", "Xã Mai Lâm", "Xã Nam Hồng", "Xã Nguyên Khê", "Xã Tàm Xá", "Xã Thụy Lâm", "Xã Uy Nỗ", "Xã Vĩnh Ngọc", "Xã Võng La", "Xã Xuân Nộn"],
+                "Huyện Gia Lâm": ["Thị trấn Trâu Quỳ", "Xã Dương Xá", "Xã Đa Tốn", "Xã Đặng Xá", "Xã Kiêu Kỵ", "Xã Lệ Chi", "Xã Phù Đổng", "Xã Phú Thị", "Xã Tân Dân", "Xã Văn Đức", "Xã Yên Viên", "Xã Cổ Bi", "Xã Bát Tràng", "Xã Kim Lan"],
+                "Huyện Thanh Trì": ["Thị trấn Văn Điển", "Xã Tứ Hiệp", "Xã Tam Hiệp", "Xã Yên Mỹ", "Xã Vĩnh Quỳnh", "Xã Ngũ Hiệp", "Xã Duyên Hà", "Xã Liên Ninh", "Xã Đại Áng", "Xã Hữu Hoà", "Xã Tả Thanh Oai", "Xã Thanh Liệt", "Xã Tam Hưng"],
+                "Huyện Hoài Đức": ["Thị trấn Trạm Trôi", "Xã An Khánh", "Xã An Thượng", "Xã Cát Quế", "Xã Di Trạch", "Xã Dương Liễu", "Xã Đức Thượng", "Xã Đắc Sở", "Xã Lại Yên", "Xã Lê Lợi", "Xã Minh Khai", "Xã Phương Đình", "Xã Sơn Đồng", "Xã Vân Canh", "Xã Vân Côn"],
+                "Huyện Thanh Oai": ["Thị trấn Kim Bài", "Xã Bích Hòa", "Xã Bình Minh", "Xã Cao Viên", "Xã Cự Khê", "Xã Dân Hòa", "Xã Kim An", "Xã Liên Châu", "Xã Mỹ Hưng", "Xã Phương Trung", "Xã Tam Hưng", "Xã Thanh Mai", "Xã Thanh Thùy", "Xã Tân Ơi"],
+                "Huyện Ứng Hòa": ["Thị trấn Vân Đình", "Xã Cao Thành", "Xã Cao Viên", "Xã Đồng Tâm", "Xã Hòa Lâm", "Xã Hòa Nam", "Xã Hòa Phú", "Xã Liên Bạt", "Xã Lưu Hoàng", "Xã Minh Đức", "Xã Phương Tú", "Xã Quảng Phú Cầu", "Xã Tảo Dương Văn", "Xã Trầm Lộng", "Xã Trung Tú"],
+                "Huyện Mỹ Đức": ["Thị trấn Đại Nghĩa", "Xã An Mỹ", "Xã An Tiến", "Xã Bột Xuyên", "Xã Đồng Tâm", "Xã Hợp Tiến", "Xã Hợp Thanh", "Xã Hương Sơn", "Xã Lê Thanh", "Xã Mỹ Thành", "Xã Phùng Xá", "Xã Tân Dân", "Xã Thượng Lâm", "Xã Tuy Lai", "Xã Vạn Kim"],
+                "Huyện Phú Xuyên": ["Thị trấn Phú Minh", "Xã Bạch Hạ", "Xã Châu Can", "Xã Đại Thắng", "Xã Đại Xuyên", "Xã Hồng Minh", "Xã Hòa Nam", "Xã Hòa Phú", "Xã Minh Tân", "Xã Phú Túc", "Xã Phú Yên", "Xã Quang Lãng", "Xã Sơn Hà", "Xã Tri Thủy"],
+                "Huyện Thường Tín": ["Thị trấn Thường Tín", "Xã An Tiến", "Xã Bình Minh", "Xã Dũng Tiến", "Xã Hà Hồi", "Xã Hòa Bình", "Xã Hòa Hậu", "Xã Hòa Phú", "Xã Liên Châu", "Xã Ninh Sở", "Xã Quất Động", "Xã Tự Nhiên", "Xã Văn Bình", "Xã Văn Tự", "Xã Vạn Điểm"],
+                "Huyện Ba Vì": ["Thị trấn Tây Đằng", "Xã Ba Trại", "Xã Cẩm Lĩnh", "Xã Cam Thượng", "Xã Chu Minh", "Xã Đồng Thái", "Xã Đông Quang", "Xã Khánh Thượng", "Xã Minh Quang", "Xã Phú Sơn", "Xã Phú Cường", "Xã Phú Đông", "Xã Phú Châu", "Xã Tản Lĩnh", "Xã Tản Hồng", "Xã Tản Viên"],
+                "Huyện Chương Mỹ": ["Thị trấn Chúc Sơn", "Xã Bắc Sơn", "Xã Bột Xuyên", "Xã Cao Dương", "Xã Cẩm Lĩnh", "Xã Đồng Phú", "Xã Đông Phương Yên", "Xã Hòa Chính", "Xã Hòa Sơn", "Xã Hợp Đồng", "Xã Hữu Văn", "Xã Lam Điền", "Xã Nam Phương Tiến", "Xã Phú Nghĩa", "Xã Phụng Châu", "Xã Tốt Động"],
+                "Huyện Quốc Oai": ["Thị trấn Quốc Oai", "Xã Cấn Hữu", "Xã Cộng Hòa", "Xã Đồng Quang", "Xã Đông Yên", "Xã Hòa Thạch", "Xã Hợp Đồng", "Xã Liệp Tuyết", "Xã Nghĩa Hương", "Xã Ngọc Liệp", "Xã Phú Cát", "Xã Phú Mãn"],
+                "Huyện Thạch Thất": ["Thị trấn Liên Quan", "Xã Bình Phú", "Xã Cẩm Yên", "Xã Chàng Sơn", "Xã Đại Đồng", "Xã Đồng Trúc", "Xã Hạ Bằng", "Xã Hương Ngải", "Xã Lại Yên", "Xã Phùng Xá", "Xã Tiến Xuân", "Xã Tân Xã", "Xã Thạch Hòa", "Xã Thạch Xá", "Xã Yên Bình"],
+                "Huyện Mê Linh": ["Thị trấn Quang Minh", "Xã Chu Phan", "Xã Đại Thịnh", "Xã Kim Hoa", "Xã Liên Mạc", "Xã Mê Linh", "Xã Tam Đồng", "Xã Tiến Thắng", "Xã Tiến Xuân", "Xã Thanh Lâm", "Xã Thanh Vân"],
+                "Huyện Sơn Tây": ["Phường Quang Trung", "Phường Lê Lợi", "Phường Trung Hưng", "Phường Viên Sơn", "Phường Xuân Khanh", "Xã Cổ Đông", "Xã Đường Lâm", "Xã Kim Sơn", "Xã Thanh Mỹ", "Xã Tòng Bạt"],
+                "Huyện Phúc Thọ": ["Thị trấn Phúc Thọ", "Xã Cẩm Đình", "Xã Hát Môn", "Xã Hiệp Thuận", "Xã Liên Hồng", "Xã Long Xuyên", "Xã Ngọc Tảo", "Xã Phụng Thượng", "Xã Sen Chiểu", "Xã Tam Hiệp", "Xã Tích Giang", "Xã Tích Sơn", "Xã Vân Hà"],
+                "Huyện Đan Phượng": ["Thị trấn Phùng", "Xã Cát Quế", "Xã Đan Phượng", "Xã Đồng Tháp", "Xã Hạ Mỗ", "Xã Liên Hà", "Xã Liên Hồng", "Xã Phương Đình", "Xã Tân Hội", "Xã Tân Lập", "Xã Thọ An", "Xã Trung Châu"],
+                "Thị xã Sơn Tây": ["Phường Quang Trung", "Phường Lê Lợi", "Phường Trung Hưng", "Phường Viên Sơn", "Phường Xuân Khanh", "Xã Cổ Đông", "Xã Đường Lâm", "Xã Kim Sơn", "Xã Thanh Mỹ", "Xã Tòng Bạt"],
+                "Thị xã Phúc Thọ": ["Thị trấn Phúc Thọ", "Xã Cẩm Đình", "Xã Hát Môn", "Xã Hiệp Thuận", "Xã Liên Hồng", "Xã Long Xuyên", "Xã Ngọc Tảo", "Xã Phụng Thượng", "Xã Sen Chiểu", "Xã Tam Hiệp", "Xã Tích Giang", "Xã Tích Sơn", "Xã Vân Hà"]
+            },
+            "TP. Hồ Chí Minh": {
+                "Quận 1": ["Phường Tân Định", "Phường Đa Kao", "Phường Bến Nghé", "Phường Bến Thành", "Phường Nguyễn Thái Bình", "Phường Phạm Ngũ Lão", "Phường Cầu Ông Lãnh", "Phường Cô Giang", "Phường Nguyễn Cư Trinh", "Phường Cầu Kho"],
+                "Quận 2": ["Phường Thảo Điền", "Phường An Phú", "Phường An Khánh", "Phường Bình An", "Phường Bình Trưng Đông", "Phường Bình Trưng Tây", "Phường Cát Lái", "Phường Thạnh Mỹ Lợi", "Phường An Lợi Đông", "Phường Thủ Thiêm"],
+                "Quận 3": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14"],
+                "Quận 4": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 6", "Phường 8", "Phường 9", "Phường 10", "Phường 13", "Phường 14", "Phường 15", "Phường 16", "Phường 18"],
+                "Quận 5": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15"],
+                "Quận 6": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14"],
+                "Quận 7": ["Phường Tân Thuận Đông", "Phường Tân Thuận Tây", "Phường Tân Kiểng", "Phường Tân Hưng", "Phường Bình Thuận", "Phường Tân Quy", "Phường Phú Thuận", "Phường Tân Phú", "Phường Tân Phong", "Phường Phú Mỹ"],
+                "Quận 8": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15", "Phường 16"],
+                "Quận 9": ["Phường Long Bình", "Phường Long Thạnh Mỹ", "Phường Tân Phú", "Phường Hiệp Phú", "Phường Tăng Nhơn Phú A", "Phường Tăng Nhơn Phú B", "Phường Phước Long A", "Phường Phước Long B", "Phường Trường Thạnh", "Phường Long Phước", "Phường Long Trường", "Phường Phước Bình", "Phường Phú Hữu"],
+                "Quận 10": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15"],
+                "Quận 11": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15", "Phường 16"],
+                "Quận 12": ["Phường An Phú Đông", "Phường Đông Hưng Thuận", "Phường Hiệp Thành", "Phường Tân Chánh Hiệp", "Phường Tân Hưng Thuận", "Phường Tân Thới Hiệp", "Phường Tân Thới Nhất", "Phường Thạnh Lộc", "Phường Thạnh Xuân", "Phường Thới An", "Phường Trung Mỹ Tây"],
+                "Quận Bình Thạnh": ["Phường 1", "Phường 2", "Phường 3", "Phường 5", "Phường 6", "Phường 7", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15", "Phường 17", "Phường 19", "Phường 21", "Phường 22", "Phường 24", "Phường 25", "Phường 26", "Phường 27", "Phường 28"],
+                "Quận Gò Vấp": ["Phường 1", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15", "Phường 16", "Phường 17"],
+                "Quận Phú Nhuận": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 13", "Phường 15", "Phường 17"],
+                "Quận Tân Bình": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15"],
+                "Quận Tân Phú": ["Phường Tân Sơn Nhì", "Phường Tây Thạnh", "Phường Sơn Kỳ", "Phường Tân Quý", "Phường Tân Thành", "Phường Phú Thọ Hòa", "Phường Phú Thạnh", "Phường Phú Trung", "Phường Hòa Thạnh", "Phường Hiệp Tân", "Phường Tân Thới Hòa"],
+                "Quận Thủ Đức": ["Phường Linh Xuân", "Phường Bình Chiểu", "Phường Linh Trung", "Phường Tam Bình", "Phường Tam Phú", "Phường Hiệp Bình Phước", "Phường Hiệp Bình Chánh", "Phường Linh Chiểu", "Phường Linh Tây", "Phường Linh Đông", "Phường Bình Thọ", "Phường Trường Thọ"]
+            },
+            "Đà Nẵng": {
+                "Quận Hải Châu": ["Phường Thạch Thang", "Phường Hải Châu I", "Phường Hải Châu II", "Phường Phước Ninh", "Phường Hòa Thuận Tây", "Phường Hòa Thuận Đông", "Phường Nam Dương", "Phường Bình Hiên", "Phường Bình Thuận", "Phường Hòa Cường Bắc", "Phường Hòa Cường Nam", "Phường Thanh Bình", "Phường Thuận Phước"],
+                "Quận Thanh Khê": ["Phường Thanh Khê Tây", "Phường Thanh Khê Đông", "Phường Xuân Hà", "Phường Tân Chính", "Phường Chính Gián", "Phường Vĩnh Trung", "Phường Thạc Gián", "Phường An Khê", "Phường Hòa Khê", "Phường Tam Thuận"],
+                "Quận Sơn Trà": ["Phường Thọ Quang", "Phường Nại Hiên Đông", "Phường Mân Thái", "Phường An Hải Bắc", "Phường Phước Mỹ", "Phường An Hải Tây", "Phường An Hải Đông"],
+                "Quận Ngũ Hành Sơn": ["Phường Mỹ An", "Phường Khuê Mỹ", "Phường Hoà Hải", "Phường Hoà Quý", "Phường Mỹ Khê"],
+                "Quận Liên Chiểu": ["Phường Hòa Hiệp Nam", "Phường Hòa Hiệp Bắc", "Phường Hòa Khánh Nam", "Phường Hòa Khánh Bắc", "Phường Hòa Minh"],
+                "Quận Cẩm Lệ": ["Phường Khuê Trung", "Phường Hòa Phát", "Phường Hòa An", "Phường Hòa Thọ Tây", "Phường Hòa Thọ Đông"]
+            },
+            "Hải Phòng": {
+                "Quận Hồng Bàng": ["Phường Quán Toan", "Phường Hùng Vương", "Phường Sở Dầu", "Phường Thượng Lý", "Phường Hạ Lý", "Phường Minh Khai", "Phường Trại Cau", "Phường Hoàng Văn Thụ", "Phường Phan Bội Châu"],
+                "Quận Lê Chân": ["Phường Cát Dài", "Phường An Biên", "Phường Lam Sơn", "Phường An Dương", "Phường Trần Nguyên Hãn", "Phường Niệm Nghĩa", "Phường Dư Hàng", "Phường Kênh Dương", "Phường Đông Hải", "Phường Cát Bi", "Phường Tràng Cát", "Phường Đằng Lâm", "Phường Hải Tân", "Phường Tràng Minh"],
+                "Quận Ngô Quyền": ["Phường Máy Chai", "Phường Máy Tơ", "Phường Vạn Mỹ", "Phường Cầu Tre", "Phường Lạc Viên", "Phường Cầu Đất", "Phường Gia Viên", "Phường Đông Khê", "Phường Lê Lợi", "Phường Đằng Giang", "Phường Đổng Quốc Bình"],
+                "Quận Kiến An": ["Phường Quán Trữ", "Phường Lại Xuân", "Phường Hoàng Diệu", "Phường Trần Thành Ngọ", "Phường Văn Đẩu", "Phường Bắc Sơn", "Phường Tràng Kenh", "Phường Đồng Hoà", "Phường Bến Nghé"]
+            },
+            "Cần Thơ": {
+                "Quận Ninh Kiều": ["Phường Cái Khế", "Phường An Phú", "Phường Tân An", "Phường An Khánh", "Phường An Cư", "Phường Hưng Lợi", "Phường An Hoà", "Phường Thới Bình", "Phường An Nghiệp", "Phường An Cư", "Phường Xuân Khánh"],
+                "Quận Bình Thuỷ": ["Phường Bình Thuỷ", "Phường Trà An", "Phường Trà Nóc", "Phường Thới An Đông", "Phường An Thới", "Phường Bùi Hữu Nghĩa", "Phường Long Hòa", "Phường Long Tuyền"],
+                "Quận Cái Răng": ["Phường Lê Bình", "Phường Hưng Phú", "Phường Hưng Thạnh", "Phường Ba Láng", "Phường Thường Thạnh", "Phường Phú Thứ", "Phường Tân Phú", "Phường Thuận An", "Phường Thuận Hưng"],
+                "Quận Ô Môn": ["Phường Châu Văn Liêm", "Phường Ô Môn", "Phường Thới Hòa", "Phường Thới Long", "Phường Thới An", "Phường Phước Thới", "Phường Trường Lạc"],
+                "Quận Thốt Nốt": ["Phường Thốt Nốt", "Phường Thuận Hưng", "Phường Tân Lộc", "Phường Thuận An", "Phường Trung Nhứt", "Phường Thạnh Hoà", "Phường Trung Kiên", "Phường Tân Hưng", "Phường Thuỷ Liêm", "Phường Trung Thành"]
+            },
+            "An Giang": {
+                "TP. Long Xuyên": ["Phường Mỹ Bình", "Phường Mỹ Long", "Phường Mỹ Xuyên", "Phường Mỹ Thới", "Phường Mỹ Quý", "Phường Mỹ Phước", "Phường Mỹ Thạnh", "Phường Mỹ Hòa", "Phường Đông Xuyên", "Phường Bình Đức", "Phường Bình Khánh"],
+                "TP. Châu Đốc": ["Phường Châu Phú B", "Phường Châu Phú A", "Phường Vĩnh Mỹ", "Phường Núi Sam", "Phường Vĩnh Nguơn", "Phường Châu Phú", "Phường Nông Thôn", "Phường Vĩnh Tế"],
+                "Huyện An Phú": ["Thị trấn An Phú", "Xã Khánh An", "Xã Quốc Thái", "Xã Nhơn Hội", "Xã Phú Hữu", "Xã Phú Hội", "Xã Phước Hưng", "Xã Vĩnh Lộc", "Xã Vĩnh Hậu", "Xã Đa Phước"],
+                "Huyện Tân Châu": ["Thị trấn Tân Châu", "Xã Long Thạnh", "Xã Phú Lộc", "Xã Tân Thạnh", "Xã Tân An", "Xã Long An", "Xã Phú Thạnh", "Xã Phú Vĩnh", "Xã Lê Chánh", "Xã Tân Hòa"]
+            },
+            "Bà Rịa - Vũng Tàu": {
+                "TP. Vũng Tàu": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường Thắng Tam", "Phường Thắng Nhì", "Phường Rạch Dừa", "Phường Nguyễn An Ninh"],
+                "TP. Bà Rịa": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường Kim Dinh", "Phường Long Hương", "Phường Long Tâm", "Phường Long Toàn", "Phường Phước Hiệp", "Phường Phước Trung"],
+                "Huyện Côn Đảo": ["Thị trấn Côn Đảo"],
+                "Huyện Xuyên Mộc": ["Thị trấn Phước Bửu", "Xã Phước Thuận", "Xã Xuân Sơn", "Xã Bông Trang", "Xã Bưng Riềng", "Xã Xuyên Mộc", "Xã Tân Lâm", "Xã Bảo Ninh", "Xã Hòa Bình"]
+            },
+            "Bắc Giang": {
+                "TP. Bắc Giang": ["Phường Thọ Xương", "Phường Trần Nguyên Hãn", "Phường Ngô Quyền", "Phường Hoàng Văn Thụ", "Phường Trưng Vương", "Phường Lê Lợi", "Phường Song Mai", "Phường Xương Giang", "Phường Dĩnh Kế", "Phường Tân Tiến"],
+                "Huyện Yên Thế": ["Thị trấn Phồn Xương", "Xã Lão Hộ", "Xã Lan Mẫu", "Xã Yên Định", "Xã Tân Tiến", "Xã Canh Nậu", "Xã Xuân Lương", "Xã Tam Tiến", "Xã Đồng Vương", "Xã Đồng Việt"],
+                "Huyện Tân Yên": ["Thị trấn Cao Thượng", "Xã Phúc Sơn", "Xã Lương Phong", "Xã Nhã Nam", "Xã Nhã Lộng", "Xã Lam Cốt", "Xã Yên Lư", "Xã Bố Hạ", "Xã Đại Hóa", "Xã Hương Gián"]
+            },
+            "Bắc Ninh": {
+                "TP. Bắc Ninh": ["Phường Vũ Ninh", "Phường Đáp Cầu", "Phường Thị Cầu", "Phường Kinh Bắc", "Phường Vệ An", "Phường Ninh Xá", "Phường Suối Hoa", "Phường Đại Phúc", "Phường Khúc Xuyên", "Phường Võ Cường"],
+                "Huyện Yên Phong": ["Thị trấn Chờ", "Xã Yên Phong", "Xã Thụy Hòa", "Xã Văn Môn", "Xã Yên Trung", "Xã Hữu Hòa", "Xã Yên Lư", "Xã Tam Đa", "Xã Liên Mạc", "Xã Đông Tiến"],
+                "Huyện Quế Võ": ["Thị trấn Phố Mới", "Xã Việt Lập", "Xã Nhân Thắng", "Xã Đại Xuân", "Xã Phương Liễu", "Xã Nam Sơn", "Xã Dũng Liệt", "Xã Chi Lăng", "Xã Phù Lưu Tế", "Xã Bồng Lai"]
+            },
+            "Bình Dương": {
+                "TP. Thủ Dầu Một": ["Phường Phú Cường", "Phường Phú Hòa", "Phường Phú Thọ", "Phường Chánh Nghĩa", "Phường Định Hòa", "Phường Hiệp An", "Phường Hiệp Thành", "Phường Phú Lợi", "Phường Phú Tân", "Phường Tương Bình Hiệp", "Phường Tân An", "Phường Lái Thiêu"],
+                "TP. Dĩ An": ["Phường Dĩ An", "Phường Đông Hòa", "Phường An Bình", "Phường Tân Bình", "Phường Tân Đông Hiệp", "Phường Bình An", "Phường Bình Thắng"],
+                "TP. Thuận An": ["Phường An Thạnh", "Phường Lái Thiêu", "Phường Bình Chuẩn", "Phường Thuận Giao", "Phường An Phú", "Phường Hưng Định", "Phường An Sơn"],
+                "Huyện Bàu Bàng": ["Thị trấn Lai Uyên", "Xã Tân Hưng", "Xã Long Nguyên", "Xã Trừ Văn Thố", "Xã Lai Hưng", "Xã Tân Bình", "Xã Uyên Hưng"]
+            },
+            "Đồng Nai": {
+                "TP. Biên Hòa": ["Phường Quyết Thắng", "Phường Thống Nhất", "Phường Dân Chủ", "Phường Tân Mai", "Phường Tân Tiến", "Phường Bửu Long", "Phường An Bình", "Phường Bình Đa", "Phường Long Bình Tân", "Phường Tam Hòa", "Phường Tam Hiệp", "Phường Tân Phong", "Phường Hóa An", "Phường Tân Hòa", "Phường Trảng Dài"],
+                "TP. Long Khánh": ["Phường Xuân An", "Phường Xuân Bình", "Phường Xuân Hoà", "Phường Xuân Lập", "Phường Xuân Tân", "Phường Xuân Thạnh", "Phường Bình Minh", "Phường Bình Hòa"],
+                "Huyện Nhơn Trạch": ["Thị trấn Hiệp Phước", "Xã Phước An", "Xã Long Tho", "Xã Đại Phước", "Xã Phước Thiền", "Xã Nhơn Trạch", "Xã Phước Khánh", "Xã Vĩnh Thanh"],
+                "Huyện Tân Phú": ["Thị trấn Tân Phú", "Xã Dak Lua", "Xã Nam Cát Tiến", "Xã Núi Tượng", "Xã Tà Lài", "Xã Trà Cổ", "Xã Phú Sơn", "Xã Phú Xuân", "Xã Phú Ngọc"]
+            },
+            "Nghệ An": {
+                "TP. Vinh": ["Phường Bến Thủy", "Phường Đông Vĩnh", "Phường Hà Huy Tập", "Phường Hồng Sơn", "Phường Lê Lợi", "Phường Quán Bàu", "Phường Quang Trung", "Phường Trường Thi", "Phường Trung Đô", "Phường Vinh Tân", "Phường Cửa Nam", "Phường Đội Cung", "Phường Hưng Bình", "Phường Hưng Dũng", "Phường Hưng Phúc"],
+                "Thị xã Cửa Lò": ["Phường Nghi Thuỷ", "Phường Nghi Hòa", "Phường Nghi Hải", "Phường Nghi Hương"],
+                "Huyện Nghi Lộc": ["Thị trấn Quán Hành", "Xã Nghi Trung", "Xã Nghi Hoa", "Xã Nghi Hưng", "Xã Nghi Long", "Xã Nghi Xuân", "Xã Nghi Thái", "Xã Nghi Lâm", "Xã Nghi Kiều", "Xã Nghi Mỹ", "Xã Nghi Phong", "Xã Nghi Thuận", "Xã Nghi Quang"],
+                "Huyện Nam Đàn": ["Thị trấn Nam Đàn", "Xã Khánh Sơn", "Xã Nam Anh", "Xã Nam Xuân", "Xã Nam Thanh", "Xã Nam Lộc", "Xã Hồng Long", "Xã Xuân Hòa", "Xã Kim Liên", "Xã Trung Phúc Cường"]
+            },
+            "Thanh Hóa": {
+                "TP. Thanh Hóa": ["Phường Ba Đình", "Phường Lam Sơn", "Phường Tân Sơn", "Phường Điện Biên", "Phường Quảng Thắng", "Phường Quảng Hưng", "Phường Quảng Thành", "Phường Đông Thọ", "Phường Đông Vệ", "Phường Đông Sơn", "Phường Đông Hải", "Phường Đông Cương", "Phường Tân Thành", "Phường Phú Sơn", "Phường Hàm Rồng"],
+                "Thị xã Bỉm Sơn": ["Phường Bỉm Sơn", "Phường Ba Đình", "Phường Lam Sơn", "Phường Tân Bình", "Phường Văn Trí", "Phường Đông Sơn"],
+                "Huyện Đông Sơn": ["Thị trấn Rừng Thông", "Xã Đông Hoàng", "Xã Đông Ninh", "Xã Đông Hòa", "Xã Đông Yên", "Xã Đông Minh", "Xã Đông Thành", "Xã Đông Văn", "Xã Đông Khê", "Xã Đông Lĩnh", "Xã Đông Thọ", "Xã Đông Phú", "Xã Đông Sơn"],
+                "Huyện Hoằng Hóa": ["Thị trấn Bút Sơn", "Xã Hoằng Giang", "Xã Hoằng Xuân", "Xã Hoằng Phượng", "Xã Hoằng Phú", "Xã Hoằng Minh", "Xã Hoằng Tiến", "Xã Hoằng Hà", "Xã Hoằng Đạt", "Xã Hoằng Đồng", "Xã Hoằng Thắng", "Xã Hoằng Hợp"]
+            },
+            "Hà Tĩnh": {
+                "TP. Hà Tĩnh": ["Phường Bắc Hà", "Phường Nam Hà", "Phường Trần Phú", "Phường Đại Nài", "Phường Thạch Quý", "Phường Văn Yên", "Phường Nguyễn Du", "Phường Thạch Linh", "Phường Thạch Hạ"],
+                "Thị xã Hồng Lĩnh": ["Phường Bắc Hồng", "Phường Nam Hồng", "Phường Đậu Liêu", "Phường Đức Thuận", "Xã Thuận Lộc"],
+                "Huyện Can Lộc": ["Thị trấn Nghèn", "Xã Thiên Lộc", "Xã Khánh Vĩnh Yên", "Xã Thanh Lộc", "Xã Vượng Lộc", "Xã Đồng Lộc", "Xã Gia Hanh"],
+                "Huyện Đức Thọ": ["Thị trấn Đức Thọ", "Xã Đức Lạng", "Xã Đức Đồng", "Xã Đức Hòa", "Xã Đức Thanh", "Xã Đức Yên", "Xã Đức Lâm", "Xã Đức Long"],
+                "Huyện Nghi Xuân": ["Thị trấn Xuân An", "Xã Xuân Hải", "Xã Xuân Giang", "Xã Xuân Hồng", "Xã Xuân Lam", "Xã Xuân Liên", "Xã Xuân Mỹ", "Xã Xuân Phổ", "Xã Xuân Quang"],
+                "Huyện Kỳ Anh": ["Thị trấn Kỳ Anh", "Xã Kỳ Lợi", "Xã Kỳ Thịnh", "Xã Kỳ Trinh", "Xã Kỳ Phương", "Xã Kỳ Nam", "Xã Kỳ Xuân", "Xã Kỳ Hải"],
+                "Huyện Vũ Quang": ["Thị trấn Vũ Quang", "Xã Đức Bồng", "Xã Đức Giang", "Xã Đức Lĩnh", "Xã Đức Hương", "Xã Đức Liên", "Xã Đức Lạc"],
+                "Huyện Hương Khê": ["Thị trấn Hương Khê", "Xã Hương Bình", "Xã Hương Thủy", "Xã Hương Trà", "Xã Hương Xuân", "Xã Phú Gia", "Xã Phú Phong", "Xã Phú Lộc"],
+                "Huyện Cẩm Xuyên": ["Thị trấn Cẩm Xuyên", "Xã Cẩm Bình", "Xã Cẩm Duệ", "Xã Cẩm Dương", "Xã Cẩm Hòa", "Xã Cẩm Lĩnh", "Xã Cẩm Mỹ", "Xã Cẩm Nhượng", "Xã Cẩm Quan"],
+                "Huyện Thạch Hà": ["Thị trấn Thạch Hà", "Xã Thạch Đài", "Xã Thạch Long", "Xã Thạch Mỹ", "Xã Thạch Ngọc", "Xã Thạch Tân", "Xã Thạch Vĩnh", "Xã Thạch Xuân"],
+                "Huyện Lộc Hà": ["Thị trấn Lộc Hà", "Xã Thạch Bằng", "Xã Thạch Châu", "Xã Thạch Kim", "Xã Thạch Mỹ", "Xã Thạch Hải", "Xã Thạch Liên", "Xã Thạch Mỹ"],
+                "Huyện Hương Sơn": ["Thị trấn Phố Châu", "Xã Sơn Bình", "Xã Sơn Bằng", "Xã Sơn Giang", "Xã Sơn Hà", "Xã Sơn Hồng", "Xã Sơn Kim 1", "Xã Sơn Kim 2"],
+                "Huyện Nghi Xuân": ["Thị trấn Xuân An", "Xã Xuân Hải", "Xã Xuân Giang", "Xã Xuân Hồng", "Xã Xuân Lam", "Xã Xuân Liên", "Xã Xuân Mỹ", "Xã Xuân Phổ", "Xã Xuân Quang"],
+                "Huyện Kỳ Anh": ["Thị trấn Kỳ Anh", "Xã Kỳ Lợi", "Xã Kỳ Thịnh", "Xã Kỳ Trinh", "Xã Kỳ Phương", "Xã Kỳ Nam", "Xã Kỳ Xuân", "Xã Kỳ Hải"]
+            },
+            "Hà Nam": {
+                "TP. Phủ Lý": ["Phường Minh Khai", "Phường Lê Hồng Phong", "Phường Trần Hưng Đạo", "Phường Thanh Châu", "Phường Liêm Chính", "Phường Châu Sơn", "Phường Lam Hạ"],
+                "Huyện Duy Tiên": ["Thị trấn Đồng Văn", "Xã Yên Bắc", "Xã Yên Nam", "Xã Yên Bắc", "Xã Yên Thọ", "Xã Yên Trung"]
+            },
+            "Hà Giang": {
+                "TP. Hà Giang": ["Phường Trần Phú", "Phường Nguyễn Trãi", "Phường Quang Trung", "Phường Minh Khai", "Phường Ngọc Hà", "Phường Phương Độ", "Phường Tân Quang", "Phường Phương Thiện"],
+                "Huyện Vị Xuyên": ["Thị trấn Vị Xuyên", "Xã Phú Linh", "Xã Phú Linh", "Xã Phú Linh", "Xã Phú Linh"]
+            }
+        };
+
+        // Enhanced autocomplete functionality for location inputs
+        function initializeLocationAutocomplete() {
+            const provinceInput = document.getElementById('province');
+            const districtInput = document.getElementById('district');
+            const wardInput = document.getElementById('ward');
+            
+            if (provinceInput) setupAutocomplete(provinceInput, Object.keys(locationData), handleProvinceSelection);
+            if (districtInput) setupAutocomplete(districtInput, [], handleDistrictSelection);
+            if (wardInput) setupAutocomplete(wardInput, [], handleWardSelection);
+        }
+
+        function setupAutocomplete(inputElement, dataSource, onSelection) {
+            const container = inputElement.parentElement;
+            const dropdown = container.querySelector('.autocomplete-dropdown');
+            let currentHighlight = -1;
+            let filteredData = [];
+
+            inputElement.addEventListener('input', function() {
+                const value = this.value.trim();
+                currentHighlight = -1;
+                
+                if (value.length === 0) {
+                    hideDropdown();
+                    return;
+                }
+
+                filteredData = dataSource.filter(item => 
+                    item.toLowerCase().includes(value.toLowerCase())
+                );
+
+                showDropdown(filteredData, dropdown, inputElement, onSelection);
+            });
+
+            inputElement.addEventListener('keydown', function(e) {
+                if (!dropdown.style.display || dropdown.style.display === 'none') return;
+
+                switch(e.key) {
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        currentHighlight = Math.min(currentHighlight + 1, filteredData.length - 1);
+                        updateHighlight();
+                        break;
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        currentHighlight = Math.max(currentHighlight - 1, -1);
+                        updateHighlight();
+                        break;
+                    case 'Enter':
+                        e.preventDefault();
+                        if (currentHighlight >= 0 && filteredData[currentHighlight]) {
+                            selectItem(filteredData[currentHighlight], inputElement, onSelection);
+                            hideDropdown();
+                        }
+                        break;
+                    case 'Escape':
+                        hideDropdown();
+                        break;
+                }
+            });
+
+            inputElement.addEventListener('blur', function() {
+                // Delay hiding to allow click events
+                setTimeout(hideDropdown, 150);
+            });
+
+            function updateHighlight() {
+                const items = dropdown.querySelectorAll('.autocomplete-item:not(.no-results)');
+                items.forEach((item, index) => {
+                    item.classList.toggle('highlighted', index === currentHighlight);
+                });
+            }
+
+            function hideDropdown() {
+                dropdown.style.display = 'none';
+                dropdown.innerHTML = '';
+            }
+        }
+
+        function showDropdown(data, dropdown, inputElement, onSelection) {
+            dropdown.innerHTML = '';
+            
+            if (data.length === 0) {
+                dropdown.innerHTML = '<div class="autocomplete-item no-results">Không tìm thấy kết quả</div>';
+            } else {
+                data.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'autocomplete-item';
+                    div.textContent = item;
+                    div.addEventListener('click', function() {
+                        selectItem(item, inputElement, onSelection);
+                        dropdown.style.display = 'none';
+                    });
+                    dropdown.appendChild(div);
+                });
+            }
+            
+            dropdown.style.display = 'block';
+        }
+
+        function selectItem(item, inputElement, onSelection) {
+            inputElement.value = item;
+            if (onSelection) onSelection(item);
+        }
+
+        function handleProvinceSelection(province) {
+            const districtInput = document.getElementById('district');
+            const wardInput = document.getElementById('ward');
+            
+            // Clear and enable district input
+            districtInput.value = '';
+            districtInput.disabled = false;
+            districtInput.placeholder = 'Nhập tên quận/huyện...';
+            
+            // Clear and disable ward input
+            wardInput.value = '';
+            wardInput.disabled = true;
+            wardInput.placeholder = 'Chọn quận/huyện trước...';
+            
+            // Update district autocomplete data
+            if (locationData[province]) {
+                const districts = Object.keys(locationData[province]);
+                setupAutocomplete(districtInput, districts, handleDistrictSelection);
+            }
+        }
+
+        function handleDistrictSelection(district) {
+            const province = document.getElementById('province').value;
+            const wardInput = document.getElementById('ward');
+            
+            // Clear and enable ward input
+            wardInput.value = '';
+            wardInput.disabled = false;
+            wardInput.placeholder = 'Nhập tên phường/xã...';
+            
+            // Update ward autocomplete data
+            if (locationData[province] && locationData[province][district]) {
+                const wards = locationData[province][district];
+                setupAutocomplete(wardInput, wards, handleWardSelection);
+            }
+        }
+
+        function handleWardSelection(ward) {
+            // Optional: Add any logic when ward is selected
+            console.log('Ward selected:', ward);
+        }
+
+        // Legacy functions for backward compatibility (now using autocomplete)
+        function loadDistricts() {
+            // This function is now handled by autocomplete
+            console.log('loadDistricts called - now using autocomplete');
+        }
+
+        function loadWards() {
+            // This function is now handled by autocomplete  
+            console.log('loadWards called - now using autocomplete');
+        }
+
+        function filterAddresses() {
+            const searchTerm = document.getElementById('addressSearch').value.toLowerCase();
+            
+            filteredAddresses = addresses.filter(address => {
+                // Filter by search term
+                const matchesSearch = searchTerm === '' || 
+                    address.recipientName.toLowerCase().includes(searchTerm) ||
+                    address.phone.includes(searchTerm) ||
+                    address.detailAddress.toLowerCase().includes(searchTerm) ||
+                    address.province.toLowerCase().includes(searchTerm) ||
+                    address.district.toLowerCase().includes(searchTerm) ||
+                    address.ward.toLowerCase().includes(searchTerm);
+                
+                // Filter by type
+                const matchesFilter = currentFilter === 'all' || 
+                    (currentFilter === 'default' && address.isDefault) ||
+                    (currentFilter !== 'default' && address.type === currentFilter);
+                
+                return matchesSearch && matchesFilter;
+            });
+            
+            displayAddresses();
+        }
+
+        function setAddressFilter(filter) {
+            currentFilter = filter;
+            
+            // Update filter button states
+            document.querySelectorAll('.address-filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-filter="${filter}"]`).classList.add('active');
+            
+            filterAddresses();
+        }
+
+        function loadAddresses() {
+            updateAddressStatistics();
+            filterAddresses();
+        }
+
+        function updateAddressStatistics() {
+            const totalAddresses = addresses.length;
+            const defaultAddress = addresses.filter(addr => addr.isDefault).length;
+            const otherAddresses = totalAddresses - defaultAddress;
+
+            document.getElementById('totalAddresses').textContent = totalAddresses;
+            document.getElementById('defaultAddress').textContent = defaultAddress;
+            document.getElementById('otherAddresses').textContent = otherAddresses;
+        }
+
+        function displayAddresses() {
+            const addressList = document.getElementById('addressList');
+            if (!addressList) return;
+
+            if (filteredAddresses.length === 0) {
+                const isEmpty = addresses.length === 0;
+                addressList.innerHTML = `
+                    <div class="address-empty-state">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h5>${isEmpty ? 'Chưa có địa chỉ nào' : 'Không tìm thấy địa chỉ phù hợp'}</h5>
+                        <p>${isEmpty ? 'Thêm địa chỉ đầu tiên của bạn để bắt đầu mua sắm' : 'Thử thay đổi từ khóa tìm kiếm hoặc bộ lọc'}</p>
+                        ${isEmpty ? `<button class="btn btn-success" onclick="openAddressModal()">
+                            <i class="fas fa-plus me-2"></i>Thêm địa chỉ mới
+                        </button>` : ''}
+                    </div>
+                `;
+                return;
+            }
+
+            const addressCards = filteredAddresses.map(address => `
+                <div class="col-md-6 mb-3">
+                    <div class="card address-card ${address.isDefault ? 'border-success' : ''}">
+                        <div class="card-body">
+                            ${address.isDefault ? '<span class="badge bg-success mb-2"><i class="bi bi-star-fill me-1"></i>Địa chỉ mặc định</span>' : ''}
+                            <h6 class="card-title">
+                                <i class="bi bi-person-fill me-2"></i>${address.recipientName}
+                            </h6>
+                            <p class="card-text text-muted mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i>${address.phone}
+                            </p>
+                            <p class="card-text">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
+                                ${address.detailAddress}
+                            </p>
+                            <p class="card-text text-muted small">
+                                ${address.ward}, ${address.district}, ${address.province}
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <i class="bi bi-tag-fill me-1"></i>
+                                    ${address.type === 'home' ? 'Nhà riêng' : address.type === 'office' ? 'Văn phòng' : 'Khác'}
+                                </small>
+                            </p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <button class="btn btn-outline-primary btn-sm" onclick="editAddress('${address.id}')">
+                                    <i class="bi bi-pencil-square me-1"></i>Sửa
+                                </button>
+                                <button class="btn btn-outline-danger btn-sm" onclick="deleteAddress('${address.id}')">
+                                    <i class="bi bi-trash3 me-1"></i>Xóa
+                                </button>
+                                ${!address.isDefault ? 
+                                    `<button class="btn btn-outline-success btn-sm" onclick="setDefaultAddress('${address.id}')">
+                                        <i class="bi bi-star me-1"></i>Đặt mặc định
+                                    </button>` : ''
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            addressList.innerHTML = `
+                <div class="row">
+                    ${addressCards}
+                </div>
+            `;
+        }
+
+        function openAddressModal(addressId = null) {
+            const isEdit = addressId !== null;
+            const address = isEdit ? addresses.find(addr => addr.id === addressId) : null;
+            
+            document.getElementById('addressModalLabel').textContent = isEdit ? 'Sửa địa chỉ' : 'Thêm địa chỉ mới';
+            document.getElementById('addressForm').reset();
+            
+            // Reset validation states
+            const form = document.getElementById('addressForm');
+            form.querySelectorAll('.is-invalid, .is-valid').forEach(el => {
+                el.classList.remove('is-invalid', 'is-valid');
+            });
+            
+            if (isEdit && address) {
+                document.getElementById('recipientName').value = address.recipientName;
+                document.getElementById('phone').value = address.phone;
+                document.getElementById('province').value = address.province;
+                
+                // Handle autocomplete for existing address
+                if (address.province) {
+                    handleProvinceSelection(address.province);
+                    setTimeout(() => {
+                        document.getElementById('district').value = address.district;
+                        if (address.district) {
+                            handleDistrictSelection(address.district);
+                            setTimeout(() => {
+                                document.getElementById('ward').value = address.ward;
+                            }, 100);
+                        }
+                    }, 100);
+                }
+                
+                document.getElementById('detailAddress').value = address.detailAddress;
+                document.getElementById('addressType').value = address.type;
+                document.getElementById('isDefault').checked = address.isDefault;
+            }
+
+            // Store the address ID for editing
+            document.getElementById('addressForm').dataset.editId = addressId || '';
+            
+            const modal = new bootstrap.Modal(document.getElementById('addressModal'));
+            modal.show();
+        }
+
+        function saveAddress() {
+            console.log('saveAddress called');
+            const form = document.getElementById('addressForm');
+            const formData = new FormData(form);
+            const editId = form.dataset.editId;
+            
+            // Validate form using our custom validation
+            if (!validateAddressForm()) {
+                console.log('Validation failed');
+                return;
+            }
+
+            console.log('Validation passed, proceeding to save...');
+
+            const addressData = {
+                id: editId || Date.now().toString(),
+                recipientName: formData.get('recipientName'),
+                phone: formData.get('phone'),
+                province: formData.get('province'),
+                district: formData.get('district'),
+                ward: formData.get('ward'),
+                detailAddress: formData.get('detailAddress'),
+                type: formData.get('addressType'),
+                isDefault: formData.get('isDefault') === 'on',
+                createdAt: editId ? addresses.find(addr => addr.id === editId).createdAt : new Date().toISOString()
+            };
+
+            console.log('Address data to save:', addressData);
+            console.log('Current addresses array before save:', addresses);
+            console.log('Edit ID:', editId);
+
+            if (editId) {
+                // Edit existing address
+                console.log('Editing existing address');
+                const index = addresses.findIndex(addr => addr.id === editId);
+                if (index !== -1) {
+                    addresses[index] = addressData;
+                    console.log('Address updated at index:', index);
+                } else {
+                    console.log('Address not found for editing');
+                }
+            } else {
+                // Add new address
+                console.log('Adding new address');
+                addresses.push(addressData);
+                console.log('New address added, total addresses:', addresses.length);
+            }
+
+            // If this address is set as default, remove default from others
+            if (addressData.isDefault) {
+                addresses.forEach(addr => {
+                    if (addr.id !== addressData.id) {
+                        addr.isDefault = false;
+                    }
+                });
+            }
+
+            // Save to localStorage
+            console.log('Saving to localStorage...');
+            localStorage.setItem('userAddresses', JSON.stringify(addresses));
+            console.log('Saved to localStorage. Checking saved data...');
+            const savedData = localStorage.getItem('userAddresses');
+            console.log('Data in localStorage:', savedData);
+            
+            // Close modal and refresh display
+            const modal = bootstrap.Modal.getInstance(document.getElementById('addressModal'));
+            modal.hide();
+            
+            console.log('Modal closed, refreshing display...');
+            loadAddresses();
+            
+            // Show success notification
+            showToast(editId ? 'Địa chỉ đã được cập nhật thành công!' : 'Địa chỉ mới đã được thêm thành công!', 'success');
+        }
+
+        function editAddress(addressId) {
+            openAddressModal(addressId);
+        }
+
+        function deleteAddress(addressId) {
+            if (confirm('Bạn có chắc muốn xóa địa chỉ này?')) {
+                addresses = addresses.filter(addr => addr.id !== addressId);
+                localStorage.setItem('userAddresses', JSON.stringify(addresses));
+                loadAddresses();
+            }
+        }
+
+        function setDefaultAddress(addressId) {
+            // Remove default from all addresses
+            addresses.forEach(addr => {
+                addr.isDefault = addr.id === addressId;
+            });
+            
+            localStorage.setItem('userAddresses', JSON.stringify(addresses));
+            loadAddresses();
+        }
+
+        // Initialize address search and filter events
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize location autocomplete
+            initializeLocationAutocomplete();
+            
+            // Search functionality
+            const searchInput = document.getElementById('addressSearch');
+            if (searchInput) {
+                searchInput.addEventListener('input', filterAddresses);
+            }
+
+            // Filter functionality
+            document.querySelectorAll('.address-filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    setAddressFilter(this.getAttribute('data-filter'));
+                });
+            });
+
+            // Real-time validation removal and phone number formatting
+            const formInputs = ['recipientName', 'phone', 'province', 'district', 'ward', 'detailAddress'];
+            formInputs.forEach(inputId => {
+                const input = document.getElementById(inputId);
+                if (input) {
+                    if (inputId === 'phone') {
+                        // Special handling for phone number
+                        input.addEventListener('input', function() {
+                            // Remove non-digit characters
+                            let value = this.value.replace(/\D/g, '');
+                            
+                            // Limit to 11 digits
+                            if (value.length > 11) {
+                                value = value.slice(0, 11);
+                            }
+                            
+                            // Update the input value
+                            this.value = value;
+                            
+                            // Remove validation classes first
+                            this.classList.remove('is-invalid', 'is-valid');
+                            
+                            // Add validation feedback
+                            if (value.length >= 10 && value.length <= 11) {
+                                this.classList.add('is-valid');
+                            } else if (value.length > 0) {
+                                this.classList.add('is-invalid');
+                            }
+                        });
+                        
+                        input.addEventListener('keypress', function(e) {
+                            // Only allow digits
+                            if (!/[0-9]/.test(e.key) && !['Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+                                e.preventDefault();
+                            }
+                        });
+                    } else {
+                        // Regular handling for other inputs
+                        input.addEventListener('input', function() {
+                            this.classList.remove('is-invalid');
+                            if (this.value.trim()) {
+                                this.classList.add('is-valid');
+                            }
+                        });
+                    }
+                    
+                    input.addEventListener('change', function() {
+                        this.classList.remove('is-invalid');
+                        if (this.value.trim()) {
+                            this.classList.add('is-valid');
+                        }
+                    });
+                }
+            });
+
+            // Setup password strength checking
+            const registerPassword = document.getElementById('registerPassword');
+            const newPassword = document.getElementById('newPassword');
+            
+            if (registerPassword) {
+                registerPassword.addEventListener('input', () => {
+                    checkPasswordStrength(registerPassword.value, 'strengthBar', 'strengthText');
+                });
+            }
+            
+            if (newPassword) {
+                newPassword.addEventListener('input', () => {
+                    checkPasswordStrength(newPassword.value, 'resetStrengthBar', 'resetStrengthText');
+                });
+            }
+
+            // Setup change password strength checking
+            const changePasswordInput = document.getElementById('newPasswordChange');
+            if (changePasswordInput) {
+                changePasswordInput.addEventListener('input', () => {
+                    checkPasswordStrength(changePasswordInput.value, 'changeStrengthBar', 'changeStrengthText');
+                });
+            }
+        });
+
+        // Logout function
+        function logout() {
+            if (confirm('Bạn có chắc muốn đăng xuất?')) {
+                showSection('loginSection');
+                // Clear any saved data if needed
+                localStorage.removeItem('userSession');
+            }
+        }
+
+        // Form validation helpers
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        function validatePhone(phone) {
+            const re = /^[0-9]{10,11}$/;
+            return re.test(phone.replace(/\s/g, ''));
+        }
+
+        // Enhanced form validation for address
+        function validateAddressForm() {
+            console.log('validateAddressForm called');
+            const form = document.getElementById('addressForm');
+            const recipientName = document.getElementById('recipientName').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const province = document.getElementById('province').value;
+            const district = document.getElementById('district').value;
+            const ward = document.getElementById('ward').value;
+            const detailAddress = document.getElementById('detailAddress').value.trim();
+
+            console.log('Form data:', { recipientName, phone, province, district, ward, detailAddress });
+
+            // Reset validation states
+            form.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+
+            let isValid = true;
+
+            if (!recipientName || recipientName.length < 2) {
+                document.getElementById('recipientName').classList.add('is-invalid');
+                isValid = false;
+            }
+
+            if (!validatePhone(phone)) {
+                document.getElementById('phone').classList.add('is-invalid');
+                isValid = false;
+            }
+
+            if (!province) {
+                document.getElementById('province').classList.add('is-invalid');
+                isValid = false;
+            }
+
+            if (!district) {
+                document.getElementById('district').classList.add('is-invalid');
+                isValid = false;
+            }
+
+            if (!ward) {
+                document.getElementById('ward').classList.add('is-invalid');
+                isValid = false;
+            }
+
+            // Giảm yêu cầu từ 10 xuống 5 ký tự cho địa chỉ chi tiết
+            if (!detailAddress || detailAddress.length < 5) {
+                document.getElementById('detailAddress').classList.add('is-invalid');
+                isValid = false;
+            }
+
+            console.log('Validation result:', isValid);
+            return isValid;
+        }
+
+        // Profile management functions
+        function loadProfile() {
+            const savedProfile = JSON.parse(localStorage.getItem('userProfile')) || {};
+            
+            document.getElementById('editName').value = savedProfile.name || '';
+            document.getElementById('editEmail').value = savedProfile.email || '';
+            document.getElementById('editPhone').value = savedProfile.phone || '';
+            document.getElementById('editBirthday').value = savedProfile.birthday || '';
+            
+            if (savedProfile.gender) {
+                document.getElementById('gender' + savedProfile.gender.charAt(0).toUpperCase() + savedProfile.gender.slice(1)).checked = true;
+            }
+            
+            document.getElementById('emailNotifications').checked = savedProfile.emailNotifications !== false;
+            
+            // Update display
+            document.getElementById('profileName').textContent = savedProfile.name || 'Người dùng';
+            document.getElementById('profileEmail').textContent = savedProfile.email || 'user@example.com';
+        }
+
+        function resetProfileForm() {
+            loadProfile();
+        }
+
+        function preventEnterSubmit(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                return false;
+            }
+        }
+
+        // Form submission handlers
+        document.addEventListener('DOMContentLoaded', function() {
+            // Profile form
+            const profileForm = document.getElementById('profileForm');
+            if (profileForm) {
+                profileForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const profileData = {
+                        name: document.getElementById('editName').value,
+                        email: document.getElementById('editEmail').value,
+                        phone: document.getElementById('editPhone').value,
+                        birthday: document.getElementById('editBirthday').value,
+                        gender: document.querySelector('input[name="gender"]:checked')?.value || '',
+                        emailNotifications: document.getElementById('emailNotifications').checked
+                    };
+                    
+                    localStorage.setItem('userProfile', JSON.stringify(profileData));
+                    loadProfile();
+                    
+                    // Show success message
+                    const alert = document.createElement('div');
+                    alert.className = 'alert alert-success alert-dismissible fade show mt-2';
+                    alert.innerHTML = `
+                        <i class="bi bi-check-circle me-2"></i>Thông tin đã được cập nhật thành công!
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    `;
+                    profileForm.insertAdjacentElement('afterend', alert);
+                    
+                    setTimeout(() => {
+                        alert.remove();
+                    }, 3000);
+                });
+            }
+
+            // Change password form
+            const changePasswordForm = document.getElementById('changePasswordForm');
+            if (changePasswordForm) {
+                changePasswordForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const currentPassword = document.getElementById('currentPassword').value;
+                    const newPassword = document.getElementById('newPasswordChange').value;
+                    const confirmPassword = document.getElementById('confirmNewPasswordChange').value;
+                    
+                    // Basic validation
+                    if (newPassword !== confirmPassword) {
+                        showAlert(changePasswordForm, 'Mật khẩu xác nhận không khớp!', 'danger');
+                        return;
+                    }
+                    
+                    if (newPassword.length < 8) {
+                        showAlert(changePasswordForm, 'Mật khẩu phải có ít nhất 8 ký tự!', 'danger');
+                        return;
+                    }
+                    
+                    // Simulate password change (in real app, verify current password)
+                    localStorage.setItem('userPassword', newPassword);
+                    
+                    // Clear form
+                    changePasswordForm.reset();
+                    
+                    showAlert(changePasswordForm, 'Mật khẩu đã được thay đổi thành công!', 'success');
+                });
+            }
+
+            // Load profile on dashboard load
+            loadProfile();
+        });
+
+        function showAlert(element, message, type) {
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type} alert-dismissible fade show mt-2`;
+            alert.innerHTML = `
+                <i class="bi bi-${type === 'success' ? 'check-circle' : 'exclamation-triangle'} me-2"></i>${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            element.insertAdjacentElement('afterend', alert);
+            
+            setTimeout(() => {
+                alert.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
